@@ -93,7 +93,7 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
                     </div>
                 </div>
             </Container>
-            <div className="mt-20 border-t border-white py-9 flex items-center justify-center">
+            <div className="mt-20 max-sm:mt-10 border-t border-white py-9 flex items-center justify-center max-sm:text-sm max-sm:py-5">
                 <span>KOHINUR PLAZA 2024</span>
             </div>
         </footer>
