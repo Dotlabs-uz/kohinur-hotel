@@ -3,7 +3,6 @@ import Container from "@/components/ui/container";
 import Image from "next/image";
 import { GoPerson } from "react-icons/go";
 import { FaArrowsLeftRight } from "react-icons/fa6";
-import { Button } from "@/components/ui/button";
 import CaroucelNumberPage from "@/components/numbers-child/carousel";
 
 interface NumbersPageProps {}
@@ -77,9 +76,9 @@ const NumbersPage: React.FunctionComponent<NumbersPageProps> = () => {
                                     <p className="text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg text-[#2A3D4D] mt-6 max-md:mt-3 font-medium">
                                         Price: 150$/night
                                     </p>
-                                    <Button className="text-xl max-lg:text-lg max-md:text-base mt-8 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-6 hover:bg-transparent hover:shadow-md max-lg:bg-[#F9A52E] max-lg:border-none max-lg:w-full max-md:mt-5 ">
+                                    <button className="text-xl max-lg:text-lg max-md:text-base mt-8 text-[#05243F] border border-[#05243F] px-20 py-6 hover:shadow-md max-lg:bg-[#F9A52E] max-lg:border-none max-lg:w-full max-md:mt-5 ">
                                         Забронировать
-                                    </Button>
+                                    </button>
                                 </div>
                                 <div className="w-full">
                                     <CaroucelNumberPage />

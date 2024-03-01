@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import {
     Carousel,
     CarouselContent,
@@ -41,9 +40,9 @@ const CarauselSection: React.FunctionComponent<CarauselProps> = () => {
                                     шаговой доступности от Сиабского базара и
                                     Соборной мечети Биби-Ханым.
                                 </p>
-                                <Button className="mt-4 max-sm:mt-2 rounded-none text-white py-4 px-20 max-sm:py-2 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-xs font-medium">
+                                <button className="mt-4 max-sm:mt-2 rounded-none text-white py-4 px-20 max-sm:py-2 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-xs font-medium">
                                     Забронировать
-                                </Button>
+                                </button>
                             </div>
                         </div>
                     </CarouselItem>

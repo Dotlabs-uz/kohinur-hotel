@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { Button } from "@/components/ui/button";
 
 interface NavbarActionsProps {}
 
@@ -26,9 +25,9 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = () => {
                         UZ
                     </option>
                 </select>
-                <Button className="bg-[#D79F25] text-[#05243F] max-lg:hidden rounded-none hover:bg-[#8c640f]">
+                <button className="bg-[#D79F25] text-[#05243F] max-lg:hidden rounded-none hover:bg-[#8c640f] text-xl px-7 py-2">
                     Забронировать
-                </Button>
+                </button>
                 <GiHamburgerMenu
                     onClick={()=> setHandleMenu(true)}
                     size={35}

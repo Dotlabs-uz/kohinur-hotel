@@ -4,7 +4,6 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
 import Image from "next/image";
 
@@ -62,9 +61,9 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
                                 Monday – Thursday | 10:00am – 5:00pm
                             </p>
                             <p>Friday – Sunday | 9:00am – 6:00pm</p>
-                            <Button className="text-xl max-lg:text-lg max-md:text-base mt-8 max-md:mt-6 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-7 hover:bg-transparent hover:shadow-md">
+                            <button className="text-xl max-lg:text-lg max-md:text-base mt-8 max-md:mt-6 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-7 hover:bg-transparent hover:shadow-md">
                                 Забронировать
-                            </Button>
+                            </button>
                         </div>
                         <div className="w-full">
                             <Image
@@ -160,9 +159,9 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
                                 </AccordionContent>
                             </AccordionItem>
                         </Accordion>
-                        <Button className="text-xl max-lg:text-lg max-md:text-base mt-8 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-7 max-sm:mt-5 hover:bg-transparent hover:shadow-md max-lg:mb-7 max-lg:bg-[#F9A52E] max-lg:border-none max-sm:w-full">
+                        <button className="text-xl max-lg:text-lg max-md:text-base mt-8 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-7 max-sm:mt-5 hover:bg-transparent hover:shadow-md max-lg:mb-7 max-lg:bg-[#F9A52E] max-lg:border-none max-sm:w-full">
                             Забронировать
-                        </Button>
+                        </button>
                     </div>
                 </section>
             </Container>

@@ -6,7 +6,6 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "@/components/ui/button";
 import Container from "@/components/ui/container";
 import Image from "next/image";
 import Link from "next/link";
@@ -87,9 +86,9 @@ export default function Home() {
                                     ручной работы, Вы заглянете в прошлое города
                                     Самарканд
                                 </p>
-                                <Button className="rounded-none bg-transparent text-black hover:bg-[#00000012] border border-black px-20 py-5 max-sm:px-10 max-sm:py-3 text-xl max-sm:text-xs font-normal mt-10 max-sm:mt-5">
+                                <button className="text-black hover:bg-[#00000012] border border-black px-20 py-5 max-sm:px-10 max-sm:py-3 text-xl max-sm:text-xs font-normal mt-10 max-sm:mt-5">
                                     Забронировать
-                                </Button>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -111,12 +110,6 @@ export default function Home() {
                 </div>
                 <div className="max-w-[1010px] max-lg:max-w-3xl max-md:max-w-xl max-sm:max-w-[90%] m-auto overflow-hidden mt-20 max-lg:mt-12 max-sm:mt-5">
                     <div className="flex items-center justify-between text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-base font-medium">
-                        {/* <button className="text-[#F9A52E] border-b-2 border-[#F9A52E]">
-                            Standart
-                        </button>
-                        <button>Deluxe</button>
-                        <button>Junior suite</button>
-                        <button>Senior suite</button> */}
                         <ButtomCarousel
                             data={[
                                 "Standart",
@@ -146,12 +139,6 @@ export default function Home() {
                 </div>
                 <div className="max-w-[1010px] max-lg:max-w-3xl max-md:max-w-xl max-sm:max-w-[90%] m-auto overflow-hidden mt-20 max-lg:mt-12 max-sm:mt-5">
                     <div className="flex items-center justify-between text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-base font-medium">
-                        {/* <button className="text-[#F9A52E] border-b-2 border-[#F9A52E]">
-                            Услуги и развлечения
-                        </button>
-                        <button>Мероприятия</button>
-                        <button>Ресторан и бар</button>
-                        <button>SPA</button> */}
                         <ButtomCarousel
                             data={[
                                 "Услуги и развлечения",
@@ -226,9 +213,9 @@ export default function Home() {
                             With the opening of its doors, the Kohinur Plaza
                             welcomes discerning travelers from all corners
                         </p>
-                        <Button className="rounded-none text-white py-4 px-20 max-sm:py-2 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-xs font-medium ">
+                        <button className="text-white py-4 px-20 max-sm:py-2 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-xs font-medium">
                             Забронировать
-                        </Button>
+                        </button>
                     </div>
                 </Container>
             </section>
