@@ -30,7 +30,7 @@ const links:Links[] = [
     },
     {
         id:5,
-        href: "/ ",
+        href: "/reviews",
         label:"Отзывы"
     }
 ]

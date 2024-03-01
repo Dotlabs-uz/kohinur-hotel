@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Button } from "./ui/button";
-import { Card, CardContent } from "./ui/card";
+import { Button } from "@/components/ui/button";
 import {
     Carousel,
     CarouselContent,

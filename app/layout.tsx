@@ -15,6 +15,7 @@ const cormorant = Cormorant_SC({
 const defaultFont = localFont({
     src: "../public/fonts/suisseintl.woff2",
     display: "swap",
+    variable: "--font-suisseintl",
 });
 
 export const metadata: Metadata = {
@@ -29,7 +30,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={cn("bg-[#E7E7E7] text-[#05243F]", defaultFont.className, cormorant.variable)}>
+            <body className={cn("bg-[#E7E7E7] text-[#05243F]", defaultFont.variable, cormorant.variable)}>
                 <Header/>
                 {children}
                 <Footer/>
