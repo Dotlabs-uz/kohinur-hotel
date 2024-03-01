@@ -32,6 +32,7 @@ export default function RootLayout({
         <html lang="en">
             <body className={cn("bg-[#E7E7E7] text-[#05243F]", defaultFont.variable, cormorant.variable)}>
                 <Header/>
+                
                 {children}
                 <Footer/>
             </body>
