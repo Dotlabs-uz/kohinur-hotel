@@ -26,7 +26,7 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = () => {
                         UZ
                     </option>
                 </select>
-                <Button className="bg-[#D79F25] text-[#05243F] max-lg:hidden">
+                <Button className="bg-[#D79F25] text-[#05243F] max-lg:hidden rounded-none">
                     Забронировать
                 </Button>
                 <GiHamburgerMenu

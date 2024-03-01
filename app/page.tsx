@@ -117,7 +117,14 @@ export default function Home() {
                         <button>Deluxe</button>
                         <button>Junior suite</button>
                         <button>Senior suite</button> */}
-                        <ButtomCarousel data={["Standart","Deluxe", "Junior suite", "Senior suite"]}/>
+                        <ButtomCarousel
+                            data={[
+                                "Standart",
+                                "Deluxe",
+                                "Junior suite",
+                                "Senior suite",
+                            ]}
+                        />
                     </div>
                 </div>
                 <div className="w-full m-auto overflow-hidden relative mt-14 max-sm:mt-6">
@@ -145,13 +152,20 @@ export default function Home() {
                         <button>Мероприятия</button>
                         <button>Ресторан и бар</button>
                         <button>SPA</button> */}
-                        <ButtomCarousel data={["Услуги и развлечения","Мероприятия", "Ресторан и бар", "SPA"]}/>
+                        <ButtomCarousel
+                            data={[
+                                "Услуги и развлечения",
+                                "Мероприятия",
+                                "Ресторан и бар",
+                                "SPA",
+                            ]}
+                        />
                     </div>
                 </div>
                 <Container>
                     <div className="grid grid-cols-3 max-lg:grid-cols-2 gap-x-4 gap-y-10 max-sm:gap-y-5 mt-12 max-md:mt-8 max-sm:mt-6">
                         {[1, 2, 3].map((item) => (
-                            <div>
+                            <div key={item}>
                                 <Image
                                     src={"/home_page/section4_img.png"}
                                     width={300}
@@ -184,7 +198,7 @@ export default function Home() {
                 <Container>
                     <div className="grid grid-cols-3 max-lg:grid-cols-2 gap-5 max-sm:gap-3 mt-12 max-md:mt-8 max-sm:mt-6">
                         {[1, 2, 3].map((item) => (
-                            <div className="bg-white shadow-lg h-[420px] max-md:h-[300px] max-sm:h-[200px] flex flex-col items-center justify-center">
+                            <div key={item} className="bg-white shadow-lg h-[420px] max-md:h-[300px] max-sm:h-[200px] flex flex-col items-center justify-center">
                                 <div className="flex flex-col items-center justify-center">
                                     <div className="w-20 h-20 max-md:h-14 max-md:w-14 max-sm:h-8 max-sm:w-8 rounded-full bg-[#D9D9D9]"></div>
                                     <p className="text-[#828282] mt-2 max-md:mt-1 max-sm:mt-[2px] max-md:text-sm max-sm:text-[7px]">
@@ -268,9 +282,9 @@ export default function Home() {
                     </div>
                 </Container>
             </section>
-            <section className="mt-20 max-md:mt-10 max-sm:mt-3">
-                <div className="w-full flex max-lg:flex-col">
-                    <div className="w-[44%] max-lg:w-full bg-[#05243F] pt-9 pb-16 px-20 text-white flex flex-col max-lg:flex-row max-lg:justify-between max-md:flex-col gap-8 max-sm:px-5">
+            <section className="mt-20 max-md:mt-10 max-sm:mt-3 bg-[#05243F] relative">
+                <Container>
+                    <div className="w-1/2 max-lg:w-full pt-9 pb-16 text-white flex flex-col max-lg:flex-row max-lg:justify-between max-md:flex-col gap-8">
                         <div>
                             <h3 className="text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-lg font-bold text-[#F9A52E] font-cormorant">
                                 Контакты и локация
@@ -326,15 +340,13 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="w-[56%] max-lg:w-full max-sm:w-[90%] max-sm:p-0 max-sm:m-auto h-full max-lg:px-10">
-                        <iframe
-                            src="https://yandex.com/map-widget/v1/?um=constructor%3A6c92e474d1b2803cf74e1c1b850a9acdd20384e82aed8183bbc181c8b4fb6050&amp;source=constructor"
-                            frameBorder="0"
-                            className="w-full h-[550px] max-md:h-[350px] max-md:h-[250px]"
-                        ></iframe>
-                    </div>
-                </div>
+                    </div>  
+                </Container>
+                <iframe
+                    src="https://yandex.com/map-widget/v1/?um=constructor%3A6c92e474d1b2803cf74e1c1b850a9acdd20384e82aed8183bbc181c8b4fb6050&amp;source=constructor"
+                    frameBorder="0"
+                    className="top-0 right-0 h-full w-full block lg:absolute lg:w-1/2 max-lg:h-[400px] max-md:h-[300px] max-sm:h-[250px]"
+                ></iframe>
             </section>
         </main>
     );

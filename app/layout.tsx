@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={cn("bg-[#E7E7E7]", defaultFont.className, cormorant.variable)}>
+            <body className={cn("bg-[#E7E7E7] text-[#05243F]", defaultFont.className, cormorant.variable)}>
                 <Header/>
                 {children}
                 <Footer/>

@@ -11,13 +11,16 @@ export function ButtomCarousel({ data }: { data: any }) {
         <div className="overflow-hidden w-full" ref={emblaRef}>
             <div className="flex">
                 {data.map((item: string, idx: number) => (
-                    <div key={idx} className="flex flex-grow flex-shrink-0 min-w-0">
+                    <div
+                        key={idx}
+                        className="flex flex-grow flex-shrink-0 min-w-0"
+                    >
                         <button
                             className={cn(
-                                "ml-5",
+                                "ml-5 text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-base",
                                 idx === 0
                                     ? "text-[#F9A52E] border-b-2 border-[#F9A52E]"
-                                    : ""
+                                    : "text-[#686868]"
                             )}
                         >
                             {item}

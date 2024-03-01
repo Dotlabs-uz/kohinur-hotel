@@ -15,24 +15,24 @@ const links:Links[] = [
     },
     {
         id:2,
-        href: "/1",
+        href: "/numbers",
         label:"Номера"
     },
     {
         id:3,
-        href: "/2",
+        href: "/services",
         label:"Сервис и услуги"
     },
     {
         id:4,
-        href: "/3",
-        label:"Отзывы"
+        href: "/restaurant",
+        label:"Питание"
     },
     {
         id:5,
-        href: "/4",
-        label:"Контакты"
-    },
+        href: "/ ",
+        label:"Отзывы"
+    }
 ]
 
 const Header: React.FunctionComponent<HeaderProps> = () => {

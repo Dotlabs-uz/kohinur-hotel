@@ -10,7 +10,7 @@ interface FooterProps {}
 
 const Footer: React.FunctionComponent<FooterProps> = () => {
     return (
-        <footer className="bg-[#05243F] border-t border-white w-full pt-10 text-white">
+        <footer id="footer" className="bg-[#05243F] border-t border-white w-full pt-10 text-white">
             <Container>
                 <div className="w-full flex gap-32 max-xl:gap-16 max-sm:gap-4 items-start justify-between">
                     <div className="w-full flex max-lg:flex-col gap-5 max-lg:gap-28 max-sm:gap-10 justify-between max-sm:text-xs">
@@ -43,9 +43,10 @@ const Footer: React.FunctionComponent<FooterProps> = () => {
                             <h3 className="font-cormorant text-3xl max-sm:text-lg">Hotel</h3>
                             <nav className="flex flex-col gap-3 max-sm:gap-2 max-sm:text-xs">
                                 <Link href={"/"}>Главная</Link>
-                                <Link href={"/"}>Об Отеле</Link>
-                                <Link href={"/"}>Каталог номеров</Link>
-                                <Link href={"/"}>Сервис</Link>
+                                <Link href={"/numbers"}>Номера</Link>
+                                <Link href={"/services"}>Сервис и услуги</Link>
+                                <Link href={"/restaurant"}>Питание</Link>
+                                <Link href={"/reviews"}>Отзывы</Link>
                             </nav>
                         </div>
                     </div>
