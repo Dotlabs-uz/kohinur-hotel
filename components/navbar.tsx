@@ -51,7 +51,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ data }) => {
                     </Link>
                 ))}
                 <div
-                    className="text-sm text-white font-medium group"
+                    className="text-sm text-white font-medium group cursor-pointer"
                     onClick={() => scrollToContent("footer")}
 
                 >
