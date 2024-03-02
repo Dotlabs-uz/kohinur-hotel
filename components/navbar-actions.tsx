@@ -2,11 +2,22 @@
 
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import BurgerMenu from "./burgerMenu";
 
 interface NavbarActionsProps {}
 
 const NavbarActions: React.FunctionComponent<NavbarActionsProps> = () => {
     const [handleMenu, setHandleMenu] = useState(false);
+
+    const openMenu = () => {
+        document.body.style.position = "fixed";
+        setHandleMenu(true);
+    };
+
+    const closeMenu = () => {
+        document.body.style.position = "";
+        setHandleMenu(false);
+    };
 
     return (
         <>
@@ -29,16 +40,16 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = () => {
                     Забронировать
                 </button>
                 <GiHamburgerMenu
-                    onClick={()=> setHandleMenu(true)}
+                    onClick={openMenu}
                     size={35}
                     color="white"
-                    className="lg:hidden max-md:w-[30px] max-md:h-5"
+                    className="lg:hidden max-md:w-[30px] max-md:h-5 cursor-pointer"
                 />
             </div>
 
-            {/* {handleMenu ? (
-                <div className="bg-white w-full h-screen absolute top-0 left-0"></div>
-            ) : null} */}
+            {handleMenu ? (
+                <BurgerMenu closeMenu={closeMenu}/>
+            ) : null}
         </>
     );
 };
