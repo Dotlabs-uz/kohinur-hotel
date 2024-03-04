@@ -20,7 +20,7 @@ const CaroucelNumberPage: React.FunctionComponent<
                     <CarouselItem key={index}>
                         <div className="h-full">
                             <Image
-                                src={"/home_page/first_section_image.jpg"}
+                                src={"/images/home_page/first_section_image.webp"}
                                 width={300}
                                 height={500}
                                 alt=""

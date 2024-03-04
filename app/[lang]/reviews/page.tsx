@@ -7,7 +7,7 @@ const ReviewsPage: React.FunctionComponent<ReviewsPageProps> = () => {
         <div>
             <section className="relative h-[400px] max-lg:h-[300px] max-sm:h-[200px] flex flex-col items-center justify-center text-white">
                 <Image
-                    src={"/Слой 2.png"}
+                    src={"/images/Слой 2.png"}
                     fill
                     alt=""
                     className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"

@@ -9,17 +9,16 @@ interface NavbarProps {
     data: Links[];
 }
 
-const scrollToContent = (contentId:string) => {
-
+const scrollToContent = (contentId: string) => {
     const content = document.getElementById(contentId);
     if (content) {
-      content.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-        inline: 'nearest'
-      });
+        content.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+            inline: "nearest",
+        });
     }
-  };
+};
 
 const Navbar: React.FunctionComponent<NavbarProps> = ({ data }) => {
     const pathname = usePathname();
@@ -27,7 +26,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ data }) => {
     const routes = data.map((route) => ({
         href: route.href,
         label: route.label,
-        active: pathname === route.href,
+        active: pathname.slice(3) === route.href,
     }));
 
     return (
@@ -53,7 +52,6 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ data }) => {
                 <div
                     className="text-sm text-white font-medium group cursor-pointer"
                     onClick={() => scrollToContent("footer")}
-
                 >
                     Контакты
                     <hr className="border-2 -rotate-3 bg-white transition opacity-0 group-hover:opacity-100 group-hover:w-full duration-200" />

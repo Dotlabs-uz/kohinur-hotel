@@ -15,7 +15,7 @@ const RestaurantPage: React.FunctionComponent<RestaurantPageProps> = () => {
         <div className="mb-28 max-lg:mb-16">
             <section className="relative h-[400px] max-lg:h-[300px] max-sm:h-[200px] flex flex-col items-center justify-center text-white">
                 <Image
-                    src={"/restaround_image.png"}
+                    src={"/images/restaround_image.png"}
                     fill
                     alt=""
                     className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
@@ -49,7 +49,7 @@ const RestaurantPage: React.FunctionComponent<RestaurantPageProps> = () => {
                 <section className="grid grid-cols-3 max-lg:grid-cols-2 gap-5 max-sm:gap-3 auto-rows-[350px] max-xl:auto-rows-[300px] max-md:auto-rows-[250px] max-sm:auto-rows-[160px] mt-40 max-lg:mt-20 max-sm:mt-8">
                     <div className="">
                         <Image
-                            src={"/restaround_image.png"}
+                            src={"/images/restaround_image.png"}
                             width={300}
                             height={300}
                             alt=""
@@ -69,7 +69,7 @@ const RestaurantPage: React.FunctionComponent<RestaurantPageProps> = () => {
                     </div>
                     <div className="">
                         <Image
-                            src={"/restaround_image.png"}
+                            src={"/images/restaround_image.png"}
                             width={300}
                             height={300}
                             alt=""
@@ -78,7 +78,7 @@ const RestaurantPage: React.FunctionComponent<RestaurantPageProps> = () => {
                     </div>
                     <div className="">
                         <Image
-                            src={"/restaround_image.png"}
+                            src={"/images/restaround_image.png"}
                             width={300}
                             height={300}
                             alt=""
@@ -87,7 +87,7 @@ const RestaurantPage: React.FunctionComponent<RestaurantPageProps> = () => {
                     </div>
                     <div className="">
                         <Image
-                            src={"/restaround_image.png"}
+                            src={"/images/restaround_image.png"}
                             width={300}
                             height={300}
                             alt=""
@@ -196,7 +196,7 @@ const RestaurantPage: React.FunctionComponent<RestaurantPageProps> = () => {
                         {[1, 2, 3].map((item) => (
                             <div key={item}>
                                 <Image
-                                    src={"/home_page/section4_img.png"}
+                                    src={"/images/home_page/section4_img.webp"}
                                     width={300}
                                     height={300}
                                     alt=""

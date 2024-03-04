@@ -4,9 +4,9 @@ import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import BurgerMenu from "./burgerMenu";
 
-interface NavbarActionsProps {}
+interface NavbarActionsProps {buttonText:string}
 
-const NavbarActions: React.FunctionComponent<NavbarActionsProps> = () => {
+const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({buttonText}) => {
     const [handleMenu, setHandleMenu] = useState(false);
 
     const openMenu = () => {
@@ -37,7 +37,7 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = () => {
                     </option>
                 </select>
                 <button className="bg-[#D79F25] text-[#05243F] max-lg:hidden rounded-none hover:bg-[#8c640f] text-xl px-7 py-2">
-                    Забронировать
+                    {buttonText}
                 </button>
                 <GiHamburgerMenu
                     onClick={openMenu}

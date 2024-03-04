@@ -12,7 +12,7 @@ const NumbersPage: React.FunctionComponent<NumbersPageProps> = () => {
         <div>
             <section className="relative h-[350px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[200px] flex flex-col gap-0 items-center justify-center text-white">
                 <Image
-                    src={"/home_page/first_section_image.jpg"}
+                    src={"/images/home_page/first_section_image.webp"}
                     fill
                     alt=""
                     className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"

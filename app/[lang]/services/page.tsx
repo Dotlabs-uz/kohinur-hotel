@@ -14,7 +14,7 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
         <div className="mb-28 max-lg:mb-16">
             <section className="relative h-[400px] max-lg:h-[300px] max-sm:h-[200px] flex flex-col items-center justify-center text-white">
                 <Image
-                    src={"/services_image.png"}
+                    src={"/images/services_image.png"}
                     fill
                     alt=""
                     className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
@@ -67,7 +67,7 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
                         </div>
                         <div className="w-full">
                             <Image
-                                src={"/services_page_img.png"}
+                                src={"/images/services_page_img.png"}
                                 width={300}
                                 height={400}
                                 alt=""
@@ -83,7 +83,7 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
                 <section className="flex max-lg:flex-col gap-5 mt-36 max-md:mt-20 max-sm:mt-14">
                     <div className="w-full">
                         <Image
-                            src={"/services_page_img.png"}
+                            src={"/images/services_page_img.png"}
                             width={300}
                             height={300}
                             alt=""
