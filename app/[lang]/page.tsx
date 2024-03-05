@@ -32,10 +32,18 @@ export default async function Home({
                     className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
                 />
                 <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full -z-10 "></div>
-                <h1 className="text-9xl max-xl:text-8xl max-lg:text-7xl max-md:text-6xl max-sm:text-5xl font-cormorant text-center">
+                <h1
+                    data-aos="zoom-in"
+                    data-aos-delay="100"
+                    className="text-9xl max-xl:text-8xl max-lg:text-7xl max-md:text-6xl max-sm:text-5xl font-cormorant text-center"
+                >
                     {homePage.section1.h1}
                 </h1>
-                <p className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-xs font-cormorant">
+                <p
+                    data-aos="zoom-in"
+                    data-aos-delay="300"
+                    className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-xs font-cormorant"
+                >
                     {homePage.section1.p}
                 </p>
             </section>
@@ -48,17 +56,27 @@ export default async function Home({
                     className="absolute -top-32 left-0 w-full h-full bg-contain object-cover bg-center -z-20"
                 />
                 <div className="m-auto w-fit flex flex-col items-center justify-center">
-                    <p className="text-[#05243F] text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-sm">
+                    <p
+                        data-aos="fade-down"
+                        data-aos-delay="100"
+                        className="text-[#05243F] text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-sm"
+                    >
                         {homePage.section2.span}
                     </p>
                     <Image
+                        data-aos="fade-up"
                         src={"/images/home_page/section2_vector.svg"}
                         width={100}
                         height={100}
                         alt=""
                         className="w-[15px] max-lg:w-[10px] max-md:w-[8px]"
                     />
-                    <h2 className="text-[#05243F] text-7xl max-xl:text-6xl max-lg:text-5xl max-md:text-4xl font-cormorant text-center max-w-[850px] max-xl:max-w-[530px] max-md:max-w-[320px] font-semibold mt-10 max-lg:mt-5 max-sm:mt-2">
+                    <h2
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                        data-aos-anchor-placement="top-bottom"
+                        className="text-[#05243F] text-7xl max-xl:text-6xl max-lg:text-5xl max-md:text-4xl font-cormorant text-center max-w-[850px] max-xl:max-w-[530px] max-md:max-w-[320px] font-semibold mt-10 max-lg:mt-5 max-sm:mt-2"
+                    >
                         {homePage.section2.title}
                     </h2>
                 </div>
@@ -150,7 +168,10 @@ export default async function Home({
                         </h2>
                         <Accordion type="single" collapsible className="w-full">
                             {homePage.section6.data.map((item) => (
-                                <AccordionItem key={item.id} value={`item-${item.id}`}>
+                                <AccordionItem
+                                    key={item.id}
+                                    value={`item-${item.id}`}
+                                >
                                     <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
                                         {item.question}
                                     </AccordionTrigger>

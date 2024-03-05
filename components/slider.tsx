@@ -18,7 +18,7 @@ export function ButtomCarousel({ data, categoryTitle, setCategoryTitle }:any) {
                     >
                         <button
                             className={cn(
-                                "ml-5 text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-base",
+                                "ml-5 text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-base hover:text-[#F9A52E] hover:border-b-2 hover:border-[#F9A52E] ease-linear duration-100",
                                 item === categoryTitle
                                     ? "text-[#F9A52E] border-b-2 border-[#F9A52E]"
                                     : "text-[#686868]"

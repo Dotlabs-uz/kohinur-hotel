@@ -7,6 +7,10 @@ import type { Metadata } from "next";
 import { Cormorant_SC } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Script from "next/script";
+import { AOSInit } from "@/components/aos";
 
 const cormorant = Cormorant_SC({
     weight: ["300", "400", "500", "600", "700"],
@@ -27,21 +31,29 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
     children,
-    params: { lang }
+    params: { lang },
 }: Readonly<{
     children: React.ReactNode;
     params: { lang: Locale };
 }>) {
+    <Script>AOS.init()</Script>;
 
-    const {footer, header, button} = await getDictionary(lang);
-    
+    const { footer, header, button } = await getDictionary(lang);
+
     return (
         <html lang="en">
-            <body className={cn("bg-[#E7E7E7] text-[#05243F]", defaultFont.variable, cormorant.variable)}>
-                <Header links={header.links} buttonText={button}/>
+            <AOSInit />
+            <body
+                className={cn(
+                    "bg-[#E7E7E7] text-[#05243F]",
+                    defaultFont.variable,
+                    cormorant.variable
+                )}
+            >
+                <Header links={header.links} buttonText={button} />
 
                 {children}
-                <Footer translation={footer}/>
+                <Footer translation={footer} />
             </body>
         </html>
     );

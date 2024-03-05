@@ -1,3 +1,4 @@
+import { motion } from "framer-motion"
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/container";
@@ -37,7 +38,7 @@ const Header = ({links, buttonText}:any) => {
     return (
         <header className="bg-[#05243F] py-3">
             <Container>
-                <div className="flex items-center justify-between">
+                <div  className="flex items-center justify-between">
                     <Link href={"/"}>
                         <Image
                             src={"/images/logo-main.svg"}

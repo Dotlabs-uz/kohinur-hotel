@@ -19,7 +19,7 @@ const CarauselSection = ({ data }: any) => {
             <CarouselContent className="gap-5 max-lg:gap-0">
                 <CarouselItem className="lg:basis-1/3 max-lg:hidden"></CarouselItem>
                 {data.map((item: any) => (
-                    <CarouselItem key={item.id} className="lg:basis-1/3">
+                    <CarouselItem data-aos="fade-left" key={item.id} className="lg:basis-1/3">
                         <div className="">
                             <Image
                                 src={"/images/home_page/first_section_image.webp"}

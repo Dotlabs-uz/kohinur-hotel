@@ -44,7 +44,7 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({
         <>
             <div className="flex items-center gap-7 max-lg:gap-5 max-md:gap-1">
                 <Select onValueChange={changeVal}>
-                    <SelectTrigger className="w-[70px] rounded-lg text-black">
+                    <SelectTrigger className="w-[70px] max-sm:w-[60px] rounded-lg text-black">
                         <SelectValue placeholder={pathname.slice(1,3).toUpperCase()} />
                     </SelectTrigger>
                     <SelectContent className="">
