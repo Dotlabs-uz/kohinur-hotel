@@ -44,9 +44,11 @@ const SectionFourth = ({ data }: any) => {
                 </div>
             </div>
             <Container>
-                <div className="grid grid-cols-3 max-lg:grid-cols-2 gap-x-4 gap-y-10 max-sm:gap-y-5 mt-12 max-md:mt-8 max-sm:mt-6">
+                <div className="overflow-hidden grid grid-cols-3 max-lg:grid-cols-2 gap-x-4 gap-y-10 max-sm:gap-y-5 mt-12 max-md:mt-8 max-sm:mt-6">
                     {filteredArr.map((item:any) => (
-                        <div data-aos="fade-left" key={item}>
+                        <div 
+                        data-aos="fade-left"  
+                        key={item}>
                             <Image
                                 src={item.img}
                                 width={300}

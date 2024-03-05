@@ -23,7 +23,7 @@ export default async function Home({
 
     return (
         <main>
-            <section className="relative h-[750px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] flex flex-col gap-0 items-center justify-center text-white">
+            <section className=" relative h-[750px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[250px] flex flex-col gap-0 items-center justify-center text-white">
                 <Image
                     src={"/images/home_page/first_section_image.webp"}
                     width={500}
@@ -35,7 +35,7 @@ export default async function Home({
                 <h1
                     data-aos="zoom-in"
                     data-aos-delay="100"
-                    className="text-9xl max-xl:text-8xl max-lg:text-7xl max-md:text-6xl max-sm:text-5xl font-cormorant text-center"
+                    className="text-9xl max-xl:text-8xl max-lg:text-7xl max-md:text-6xl max-sm:text-4xl font-cormorant text-center"
                 >
                     {homePage.section1.h1}
                 </h1>
@@ -112,7 +112,7 @@ export default async function Home({
                     </div>
                 </Container>
             </section>
-            <SectionThree data={homePage} />
+            <SectionThree data={homePage} buttonText={button}/>
             <SectionFourth data={homePage?.section4} />
             <section className="mt-28 max-sm:mt-14">
                 <div className="w-full flex flex-col items-center justify-center gap-5 max-sm:gap-2">
@@ -154,7 +154,7 @@ export default async function Home({
                         <p className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-xs text-[#2A3D4D] max-w-[530px] max-sm:max-w-[340px] text-center">
                             {homePage.section5.p}
                         </p>
-                        <button className="text-white py-4 px-20 max-sm:py-2 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-xs font-medium">
+                        <button className="mt-4 max-sm:mt-2 rounded-none text-white py-4 px-20 max-sm:py-3 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-base font-medium">
                             {button}
                         </button>
                     </div>

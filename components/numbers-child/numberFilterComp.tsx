@@ -35,7 +35,6 @@ const NumberFilterComp = ({ data, buttonText }: any) => {
                 </div>
                 {filteredArr.map((item: any) => (
                     <div
-                        data-aos="fade-left"
                         key={item}
                         className="w-full justify-between border-t border-[#C6CACD] mt-14 max-lg:mt-10 max-sm:mt-5 pt-9"
                     >

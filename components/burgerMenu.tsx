@@ -22,9 +22,8 @@ const BurgerMenu: React.FunctionComponent<BurgerMenuProps> = ({
 
     return (
         <div
-            data-aos="fade-top"
-            data-aos-easing="linear"
-            data-aos-duration="500"
+            data-aos="fade-down"
+            data-aos-duration="1500"
             className="bg-[#E7E7E7] w-full h-screen fixed top-0 left-0 z-10"
         >
             <Container>

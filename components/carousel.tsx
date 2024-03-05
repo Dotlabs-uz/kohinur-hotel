@@ -7,8 +7,7 @@ import {
     CarouselPrevious,
 } from "./ui/carousel";
 
-const CarauselSection = ({ data }: any) => {
-
+const CarauselSection = ({ data, button }: any) => {
     return (
         <Carousel
             opts={{
@@ -19,10 +18,12 @@ const CarauselSection = ({ data }: any) => {
             <CarouselContent className="gap-5 max-lg:gap-0">
                 <CarouselItem className="lg:basis-1/3 max-lg:hidden"></CarouselItem>
                 {data.map((item: any) => (
-                    <CarouselItem data-aos="fade-left" key={item.id} className="lg:basis-1/3">
-                        <div className="">
+                    <CarouselItem key={item.id} className="lg:basis-1/3">
+                        <div data-aos="fade-left" className="">
                             <Image
-                                src={"/images/home_page/first_section_image.webp"}
+                                src={
+                                    "/images/home_page/first_section_image.webp"
+                                }
                                 width={400}
                                 height={300}
                                 alt=""
@@ -34,10 +35,10 @@ const CarauselSection = ({ data }: any) => {
                                     {item.title}
                                 </h3>
                                 <p className="text-center max-w-xl max-md:max-w-md max-md:text-sm max-sm:text-xs max-sm:w-[90%]">
-                                {item.info}
+                                    {item.info}
                                 </p>
-                                <button className="mt-4 max-sm:mt-2 rounded-none text-white py-4 px-20 max-sm:py-2 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-xs font-medium">
-                                    Забронировать
+                                <button className="mt-4 max-sm:mt-2 rounded-none text-white py-4 px-20 max-sm:py-3 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-base font-medium">
+                                    {button}
                                 </button>
                             </div>
                         </div>
