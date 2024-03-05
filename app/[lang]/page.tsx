@@ -95,27 +95,27 @@ export default async function Home({
                 </Container>
             </section>
             <SectionThree data={homePage} />
-            <SectionFourth data={homePage?.section4}/>
+            <SectionFourth data={homePage?.section4} />
             <section className="mt-28 max-sm:mt-14">
                 <div className="w-full flex flex-col items-center justify-center gap-5 max-sm:gap-2">
                     <span className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base font-extralight text-[#05243F]">
-                        Отзывы
+                        {homePage.section5.span}
                     </span>
                     <h2 className="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl max-w-[750px] max-lg:max-w-[500px] max-sm:max-w-[280px] font-semibold font-cormorant text-[#05243F] text-center">
-                        Что говорят о нас наши гости
+                        {homePage.section5.title}
                     </h2>
                 </div>
                 <Container>
                     <div className="grid grid-cols-3 max-lg:grid-cols-2 gap-5 max-sm:gap-3 mt-12 max-md:mt-8 max-sm:mt-6">
-                        {[1, 2, 3].map((item) => (
+                        {homePage.section5.data.map((item) => (
                             <div
-                                key={item}
+                                key={item.id}
                                 className="bg-white shadow-lg h-[420px] max-md:h-[300px] max-sm:h-[200px] flex flex-col items-center justify-center"
                             >
                                 <div className="flex flex-col items-center justify-center">
                                     <div className="w-20 h-20 max-md:h-14 max-md:w-14 max-sm:h-8 max-sm:w-8 rounded-full bg-[#D9D9D9]"></div>
                                     <p className="text-[#828282] mt-2 max-md:mt-1 max-sm:mt-[2px] max-md:text-sm max-sm:text-[7px]">
-                                        Donquixote Doflamingo
+                                        {item.name}
                                     </p>
                                 </div>
 
@@ -127,20 +127,17 @@ export default async function Home({
                                     className="w-[65px] max-md:w-[50px] max-sm:w-[25px] mt-10 max-md:mt-5 max-sm:mt-3"
                                 />
                                 <p className="text-xl font-medium text-center max-w-[340px] max-md:max-w-[200px] max-sm:max-w-[130px] mt-8 max-md:mt-4 max-sm:mt-3 max-md:text-base max-sm:text-xs">
-                                    With the opening of its doors, the Kohinur
-                                    Plaza welcomes discerning travelers from all
-                                    corners
+                                    {item.p}
                                 </p>
                             </div>
                         ))}
                     </div>
                     <div className="flex flex-col items-center justify-center gap-7 max-md:gap-5 max-sm:gap-3 mt-[50px] max-md:mt-[30px] max-sm:mt-[25px]">
                         <p className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-xs text-[#2A3D4D] max-w-[530px] max-sm:max-w-[340px] text-center">
-                            With the opening of its doors, the Kohinur Plaza
-                            welcomes discerning travelers from all corners
+                            {homePage.section5.p}
                         </p>
                         <button className="text-white py-4 px-20 max-sm:py-2 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-xs font-medium">
-                            Забронировать
+                            {button}
                         </button>
                     </div>
                 </Container>
@@ -149,48 +146,19 @@ export default async function Home({
                 <Container>
                     <div className="flex max-lg:flex-col max-lg:gap-5 justify-between text-[#05243F]">
                         <h2 className="w-full text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-bold font-cormorant">
-                            Остались ещё вопросы?
+                            {homePage.section6.title}
                         </h2>
                         <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem value="item-1">
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Как забронировать номер?
-                                </AccordionTrigger>
-                                <AccordionContent>
-                                    Yes. It adheres to the WAI-ARIA design
-                                    pattern.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-2">
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Is it styled?
-                                </AccordionTrigger>
-                                <AccordionContent>
-                                    Yes. It comes with default styles that
-                                    matches the other components&apos;
-                                    aesthetic.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-3">
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Is it animated?
-                                </AccordionTrigger>
-                                <AccordionContent>
-                                    Yes. It&apos;s animated by default, but you
-                                    can disable it if you prefer.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem value="item-4">
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Что находится рядом с отелем?
-                                </AccordionTrigger>
-                                <AccordionContent>
-                                    “Kohinur Plaza” Hotel & Spa расположен в
-                                    старой части древнего города Самарканд в
-                                    шаговой доступности от Сиабского базара и
-                                    Соборной мечети Биби-Ханым.
-                                </AccordionContent>
-                            </AccordionItem>
+                            {homePage.section6.data.map((item) => (
+                                <AccordionItem key={item.id} value={`item-${item.id}`}>
+                                    <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
+                                        {item.question}
+                                    </AccordionTrigger>
+                                    <AccordionContent>
+                                        {item.answer}
+                                    </AccordionContent>
+                                </AccordionItem>
+                            ))}
                         </Accordion>
                     </div>
                 </Container>
@@ -200,18 +168,15 @@ export default async function Home({
                     <div className="w-1/2 max-lg:w-full pt-9 pb-16 text-white flex flex-col max-lg:flex-row max-lg:justify-between max-md:flex-col gap-8">
                         <div>
                             <h3 className="text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-lg font-bold text-[#F9A52E] font-cormorant">
-                                Контакты и локация
+                                {homePage.section7.title}
                             </h3>
                             <p className="mt-5 max-w-[350px] max-sm:text-xs">
-                                “Kohinur Plaza” Hotel & Spa расположен в старой
-                                части древнего города Самарканд в шаговой
-                                доступности от Сиабского базара и Соборной
-                                мечети Биби-Ханым.
+                                {homePage.section7.p}
                             </p>
                         </div>
                         <div className="flex flex-col gap-5 max-sm:gap-3 max-sm:text-xs">
                             <h3 className="font-cormorant text-3xl max-sm:text-lg">
-                                Сontact us
+                                {homePage.section7.title2}
                             </h3>
                             <div className="flex flex-col gap-5 max-sm:flex-row max-sm:flex-wrap">
                                 <div className="flex items-center gap-4 ">
@@ -236,8 +201,14 @@ export default async function Home({
                                         className="max-sm:w-[18px]"
                                     />
                                     <div className="flex flex-col gap-1">
-                                        <span>Samarkand</span>
-                                        <span>st. Mirzo-Ulugbek 52</span>
+                                        <span>
+                                            {" "}
+                                            {homePage.section7.adress1}
+                                        </span>
+                                        <span>
+                                            {" "}
+                                            {homePage.section7.adress2}
+                                        </span>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-4">
@@ -247,7 +218,7 @@ export default async function Home({
                                         className="max-sm:w-[18px]"
                                     />
                                     <div className="flex flex-col gap-1">
-                                        <span>Понедельник-Воскресенье</span>
+                                        <span>{homePage.section7.day}</span>
                                         <span>08:00 AM- 05:00 PM</span>
                                     </div>
                                 </div>

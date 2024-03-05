@@ -5,11 +5,17 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 import Container from "@/components/ui/container";
+import { Locale } from "@/i18n.config";
+import { getDictionary } from "@/lib/dictionary";
 import Image from "next/image";
 
-interface ServicesPageProps {}
+const ServicesPage = async ({
+    params: { lang },
+}: {
+    params: { lang: Locale };
+}) => {
+    const { servicesPage, button } = await getDictionary(lang);
 
-const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
     return (
         <div className="mb-28 max-lg:mb-16">
             <section className="relative h-[400px] max-lg:h-[300px] max-sm:h-[200px] flex flex-col items-center justify-center text-white">
@@ -21,21 +27,21 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
                 />
                 <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full -z-10"></div>
                 <h1 className="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl font-cormorant text-center">
-                    Сервис и услуги
+                    {servicesPage.section1.h1}
                 </h1>
                 <p className="mt-3 max-w-xl text-center text-2xl max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-xs font-cormorant">
-                    With the opening of its doors, the Kohinur Plaza welcomes
-                    discerning travelers from all corners
+                    {servicesPage.section1.p}
                 </p>
             </section>
             <div className="flex flex-col items-center justify-center gap-3 mt-24 max-lg:mt-10">
-                <p className="text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-base font-light">Отдых</p>
+                <p className="text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-base font-light">
+                    {servicesPage.section2.span}
+                </p>
                 <h2 className="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl font-cormorant font-semibold">
-                    Массаж и СПА
+                    {servicesPage.section2.h1}
                 </h2>
                 <p className="text-2xl max-lg:text-xl max-md:text-base max-sm:text-sm text-center max-w-xl font-light">
-                    With the opening of its doors, the Kohinur Plaza welcomes
-                    discerning travelers from all corners
+                    {servicesPage.section2.p}
                 </p>
             </div>
             <Container>
@@ -43,26 +49,27 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
                     <div className="flex max-lg:flex-col-reverse gap-14 max-lg:gap-8 max-sm:gap-5">
                         <div className="w-full">
                             <span className="text-3xl max-lg:text-2xl max-md:text-xl font-light">
-                                Services
+                                {servicesPage.section2.block.span}
                             </span>
                             <h3 className="mt-6 max-md:mt-3 text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-cormorant font-bold text-[#05243f]">
-                                Spa & Wellness
+                                {servicesPage.section2.block.titel}
                             </h3>
                             <p className="text-2xl max-lg:text-lg max-md:text-base max-sm:text-sm text-[#2A3D4D] mt-5 max-md:mt-3 max-sm:mt-2">
-                                With the opening of its doors, the Kohinur Plaza
-                                welcomes discerning travelers from all corners
-                                of the globe to experience the magic of
-                                Uzbekistan in unparalleled comfort and style.
+                                {servicesPage.section2.block.info}
                             </p>
                             <p className="mt-20 max-md:mt-14 max-sm:mt-10 text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg text-[#2A3D4D] font-light">
-                                Hours of operation
+                                {servicesPage.section2.block.workTime}
                             </p>
                             <p className="mt-6 max-md:mt-3">
-                                Monday – Thursday | 10:00am – 5:00pm
+                                {servicesPage.section2.block.first} | 10:00am –
+                                5:00pm
                             </p>
-                            <p>Friday – Sunday | 9:00am – 6:00pm</p>
+                            <p>
+                                {servicesPage.section2.block.first}| 9:00am –
+                                6:00pm
+                            </p>
                             <button className="text-xl max-lg:text-lg max-md:text-base mt-8 max-md:mt-6 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-7 hover:bg-transparent hover:shadow-md">
-                                Забронировать
+                                {button}
                             </button>
                         </div>
                         <div className="w-full">
@@ -77,8 +84,7 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
                     </div>
                 </section>
                 <p className="text-4xl max-lg:text-3xl max-md:text-2xl font-cormorant font-bold mt-32 max-md:mt-20 max-sm:mt-16 max-w-[800px] m-auto text-center">
-                    “The relaxed and sophisticated ambiance allowed me to melt
-                    into this treatment of royalty.”
+                    {servicesPage.section2.p}
                 </p>
                 <section className="flex max-lg:flex-col gap-5 mt-36 max-md:mt-20 max-sm:mt-14">
                     <div className="w-full">
@@ -92,75 +98,23 @@ const ServicesPage: React.FunctionComponent<ServicesPageProps> = () => {
                     </div>
                     <div className="w-full border-b-2 border-[#445666]">
                         <Accordion type="single" collapsible className="w-full">
-                            <AccordionItem
-                                value="item-1"
-                                className="border-b border-[#445666]"
-                            >
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Закрытый бассейн
-                                </AccordionTrigger>
-                                <AccordionContent className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-sm">
-                                    Yes. It adheres to the WAI-ARIA design
-                                    pattern.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem
-                                value="item-2"
-                                className="border-b border-[#445666]"
-                            >
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Финская сауна
-                                </AccordionTrigger>
-                                <AccordionContent className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-sm">
-                                    Yes. It comes with default styles that
-                                    matches the other components&apos;
-                                    aesthetic.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem
-                                value="item-3"
-                                className="border-b border-[#445666]"
-                            >
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Турецкий хаммам
-                                </AccordionTrigger>
-                                <AccordionContent className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-sm">
-                                    Yes. It&apos;s animated by default, but you
-                                    can disable it if you prefer.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem
-                                value="item-4"
-                                className="border-b border-[#445666]"
-                            >
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Массажные кабинеты
-                                </AccordionTrigger>
-                                <AccordionContent className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-sm">
-                                    “Kohinur Plaza” Hotel & Spa расположен в
-                                    старой части древнего города Самарканд в
-                                    шаговой доступности от Сиабского базара и
-                                    Соборной мечети Биби-Ханым.
-                                </AccordionContent>
-                            </AccordionItem>
-                            <AccordionItem
-                                value="item-5"
-                                className="border-b border-[#445666]"
-                            >
-                                <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
-                                    Турецкий хаммам
-                                </AccordionTrigger>
-                                <AccordionContent className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-sm">
-                                    This massage will relieve tension in focus
-                                    areas including the lower back, feet, and
-                                    legs are is designed to uplift the
-                                    mother-to-be. It is typically enjoyed in the
-                                    second and third trimesters.
-                                </AccordionContent>
-                            </AccordionItem>
+                            {servicesPage.section3.map((item) => (
+                                <AccordionItem
+                                    key={item.id}
+                                    value={`item-${item.id}`}
+                                    className="border-b border-[#445666]"
+                                >
+                                    <AccordionTrigger className="text-4xl max-lg:text-2xl max-md:text-xl font-cormorant max-sm:text-lg font-bold">
+                                        {item.question}
+                                    </AccordionTrigger>
+                                    <AccordionContent className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-sm">
+                                        {item.answer}
+                                    </AccordionContent>
+                                </AccordionItem>
+                            ))}
                         </Accordion>
                         <button className="text-xl max-lg:text-lg max-md:text-base mt-8 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-7 max-sm:mt-5 hover:bg-transparent hover:shadow-md max-lg:mb-7 max-lg:bg-[#F9A52E] max-lg:border-none max-sm:w-full">
-                            Забронировать
+                            {button}
                         </button>
                     </div>
                 </section>

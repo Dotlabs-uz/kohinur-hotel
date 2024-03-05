@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/ui/container";
-import { getDictionary } from "@/lib/dictionary";
 import Navbar from "./navbar";
 import NavbarActions from "./navbar-actions";
 

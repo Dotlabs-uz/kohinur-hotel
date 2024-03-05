@@ -242,174 +242,61 @@
             "h1": "Номера и люксы",
             "p": "Открывая свои двери, Кохинур Плаза приветствует взыскательных путешественников со всех уголков."
         },
+        "filterButtons": ["Standart", "Deluxe", "Junior suite", "Senior suite"],
         "section2_filter": [
             {
                 "id": "1",
                 "title": "Standart",
-                "data": [
-                    {
-                        "id": "1",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "2",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "3",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "4",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    }
-                ]
+                "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
+                "img": "/home_page/first_section_image.jpg",
+                "quantityPeople": "2",
+                "price": " 150$/night",
+                "size": "15 m²"
             },
             {
                 "id": "2",
-                "title": "Deluxe",
-                "data": [
-                    {
-                        "id": "1",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "2",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "3",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "4",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    }
-                ]
+                "title": "Standart",
+                "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
+                "img": "/home_page/first_section_image.jpg",
+                "quantityPeople": "2",
+                "price": " 150$/night",
+                "size": "15 m²"
             },
             {
                 "id": "3",
-                "title": "Junior suite",
-                "data": [
-                    {
-                        "id": "1",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "2",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "3",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "4",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    }
-                ]
+                "title": "Deluxe",
+                "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
+                "img": "/home_page/first_section_image.jpg",
+                "quantityPeople": "2",
+                "price": "150$/night",
+                "size": "15 m²"
             },
             {
                 "id": "4",
+                "title": "Deluxe",
+                "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
+                "img": "/home_page/first_section_image.jpg",
+                "quantityPeople": "2",
+                "price": "150$/night",
+                "size": "15 m²"
+            },
+            {
+                "id": "5",
+                "title": "Junior suite",
+                "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
+                "img": "/home_page/first_section_image.jpg",
+                "quantityPeople": "2",
+                "price": "150$/night",
+                "size": "15 m²"
+            },
+            {
+                "id": "6",
                 "title": "Senior suite",
-                "data": [
-                    {
-                        "id": "1",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "2",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "3",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    },
-                    {
-                        "id": "4",
-                        "title": "Deluxe",
-                        "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-                        "img": "/home_page/first_section_image.jpg",
-                        "quantityPeople": "2",
-                        "price": " 150$/night",
-                        "size": "15 m²"
-                    }
-                ]
+                "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
+                "img": "/home_page/first_section_image.jpg",
+                "quantityPeople": "2",
+                "price": "150$/night",
+                "size": "15 m²"
             }
         ]
     },
@@ -432,18 +319,33 @@
             }
         },
         "p": "“The relaxed and sophisticated ambiance allowed me to melt into this treatment of royalty.”",
-        "section3": {
-            "title1": "Закрытый бассейн",
-            "text1": "Yes. It adheres to the WAI-ARIA design pattern.",
-            "title2": "Финская сауна",
-            "text2": "Yes. It comes with default styles that matches the other components' aesthetic.",
-            "title3": "Турецкий хаммам",
-            "text3": "Yes. It's animated by default, but you can disable it if you prefer.",
-            "title4": "Массажные кабинеты",
-            "text4": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-            "title5": "Турецкий хаммам",
-            "text5": "This massage will relieve tension in focus areas including the lower back, feet, and legs are is designed to uplift the mother-to-be. It is typically enjoyed in the second and third trimesters."
-        }
+        "section3": [
+            {
+                "id": 1,
+                "question": "Закрытый бассейн",
+                "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+            },
+            {
+                "id": 2,
+                "question": "Финская сауна",
+                "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+            },
+            {
+                "id": 3,
+                "question": "Турецкий хаммам",
+                "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+            },
+            {
+                "id": 4,
+                "question": "Массажные кабинеты",
+                "answer": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым."
+            },
+            {
+                "id": 5,
+                "question": "Турецкий хаммам",
+                "answer": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым."
+            }
+        ]
     },
     "restaurantPage": {
         "section1": {
@@ -481,22 +383,40 @@
             "text": "This massage will relieve tension in focus areas including the lower back, feet, and legs are is designed to uplift the mother-to-be. It is typically enjoyed in the second and third trimesters."
         },
         "section4": {
-            "h2": "Специальные предложения",
+            "title": "Специальные предложения",
             "p": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners",
-            "title1": "Закрытый бассейн",
-            "text1": "Yes. It adheres to the WAI-ARIA design pattern.",
-            "title2": "Финская сауна",
-            "text2": "Yes. It comes with default styles that matches the other components' aesthetic.",
-            "title3": "Турецкий хаммам",
-            "text3": "Yes. It's animated by default, but you can disable it if you prefer.",
-            "title4": "Массажные кабинеты",
-            "text4": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
-            "title5": "Турецкий хаммам",
-            "text5": "This massage will relieve tension in focus areas including the lower back, feet, and legs are is designed to uplift the mother-to-be. It is typically enjoyed in the second and third trimesters."
+            "data": [
+                {
+                    "id": 1,
+                    "question": "Закрытый бассейн",
+                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                },
+                {
+                    "id": 2,
+                    "question": "Финская сауна",
+                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                },
+                {
+                    "id": 3,
+                    "question": "Турецкий хаммам",
+                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                },
+                {
+                    "id": 4,
+                    "question": "Массажные кабинеты",
+                    "answer": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым."
+                },
+                {
+                    "id": 5,
+                    "question": "Турецкий хаммам",
+                    "answer": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым."
+                }
+            ]
         },
         "section5": {
             "span": "Активности",
             "title": "Мероприятия и активности",
+            "p":"With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners",
             "data": [
                 {
                     "id": 1,

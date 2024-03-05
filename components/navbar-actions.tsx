@@ -1,13 +1,34 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import BurgerMenu from "./burgerMenu";
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "./ui/select";
 
-interface NavbarActionsProps {buttonText:string}
+interface NavbarActionsProps {
+    buttonText: string;
+}
 
-const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({buttonText}) => {
+const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({
+    buttonText,
+}) => {
     const [handleMenu, setHandleMenu] = useState(false);
+    const pathname = usePathname();
+    console.log(pathname);
+
+    const router = useRouter();
+
+    function changeVal(e: any) {
+        router.push(`/${e}/${pathname.slice(3)}`);
+    }
 
     const openMenu = () => {
         document.body.style.position = "fixed";
@@ -22,7 +43,7 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({buttonText}
     return (
         <>
             <div className="flex items-center gap-7 max-lg:gap-5 max-md:gap-1">
-                <select
+                {/* <select
                     title="change lang"
                     className="bg-transparent text-[#D79F25] text-xl max-md:text-sm font-semibold"
                 >
@@ -35,7 +56,16 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({buttonText}
                     <option className="bg-[#05243F]" value="value1">
                         UZ
                     </option>
-                </select>
+                </select> */}
+                <Select onValueChange={changeVal}>
+                    <SelectTrigger className="w-[70px] rounded-lg text-black">
+                        <SelectValue placeholder={pathname.slice(1,3).toUpperCase()} />
+                    </SelectTrigger>
+                    <SelectContent className="">
+                        <SelectItem value="ru">RU</SelectItem>
+                        <SelectItem value="en">EN</SelectItem>
+                    </SelectContent>
+                </Select>
                 <button className="bg-[#D79F25] text-[#05243F] max-lg:hidden rounded-none hover:bg-[#8c640f] text-xl px-7 py-2">
                     {buttonText}
                 </button>
@@ -47,9 +77,7 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({buttonText}
                 />
             </div>
 
-            {handleMenu ? (
-                <BurgerMenu closeMenu={closeMenu}/>
-            ) : null}
+            {handleMenu ? <BurgerMenu closeMenu={closeMenu} /> : null}
         </>
     );
 };
