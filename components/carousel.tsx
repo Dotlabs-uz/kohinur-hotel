@@ -6,6 +6,7 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "./ui/carousel";
+import Container from "./ui/container";
 
 const CarauselSection = ({ data, button }: any) => {
     return (
@@ -13,12 +14,11 @@ const CarauselSection = ({ data, button }: any) => {
             opts={{
                 align: "start",
             }}
-            className="w-[150%] max-lg:w-[100%] -translate-x-[19%] max-lg:translate-x-0"
+            className="mx-auto max-w-4xl"
         >
             <CarouselContent className="gap-5 max-lg:gap-0">
-                <CarouselItem className="lg:basis-1/3 max-lg:hidden"></CarouselItem>
                 {data.map((item: any) => (
-                    <CarouselItem key={item.id} className="lg:basis-1/3">
+                    <CarouselItem key={item.id} className="">
                         <div data-aos="fade-left" className="">
                             <Image
                                 src={
@@ -44,7 +44,6 @@ const CarauselSection = ({ data, button }: any) => {
                         </div>
                     </CarouselItem>
                 ))}
-                <CarouselItem className="basis-0 lg:basis-1/3"></CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="left-1/2 -translate-x-[120%] max-lg:-translate-x-[125%] translate-y-28 max-md:translate-y-20 max-sm:translate-y-12" />
             <CarouselNext className="left-1/2 max-lg:-translate-x-[25%] translate-y-28 max-md:translate-y-20 max-sm:translate-y-12" />
