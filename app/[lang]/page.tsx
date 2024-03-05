@@ -23,7 +23,7 @@ export default async function Home({
 
     return (
         <main>
-            <section className="relative h-[860px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] flex flex-col gap-0 items-center justify-center text-white">
+            <section className="relative h-[750px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] flex flex-col gap-0 items-center justify-center text-white">
                 <Image
                     src={"/images/home_page/first_section_image.webp"}
                     width={500}
@@ -31,8 +31,8 @@ export default async function Home({
                     alt=""
                     className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
                 />
-                <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full -z-10"></div>
-                <h1 className="text-[187px] leading-[150px] max-xl:text-[130px] max-xl:leading-[100px] max-lg:text-[110px] max-md:text-[80px] max-sm:text-[47px] max-sm:leading-[40px] font-cormorant">
+                <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full -z-10 "></div>
+                <h1 className="text-9xl max-xl:text-8xl max-lg:text-7xl max-md:text-6xl max-sm:text-5xl font-cormorant text-center">
                     {homePage.section1.h1}
                 </h1>
                 <p className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-xs font-cormorant">

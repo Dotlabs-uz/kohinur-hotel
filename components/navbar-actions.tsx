@@ -43,20 +43,6 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({
     return (
         <>
             <div className="flex items-center gap-7 max-lg:gap-5 max-md:gap-1">
-                {/* <select
-                    title="change lang"
-                    className="bg-transparent text-[#D79F25] text-xl max-md:text-sm font-semibold"
-                >
-                    <option className="bg-[#05243F]" value="value1">
-                        RU
-                    </option>
-                    <option className="bg-[#05243F]" value="value1">
-                        EN
-                    </option>
-                    <option className="bg-[#05243F]" value="value1">
-                        UZ
-                    </option>
-                </select> */}
                 <Select onValueChange={changeVal}>
                     <SelectTrigger className="w-[70px] rounded-lg text-black">
                         <SelectValue placeholder={pathname.slice(1,3).toUpperCase()} />
