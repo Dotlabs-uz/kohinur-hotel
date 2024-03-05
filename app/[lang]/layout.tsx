@@ -36,8 +36,6 @@ export default async function RootLayout({
     children: React.ReactNode;
     params: { lang: Locale };
 }>) {
-    <Script>AOS.init()</Script>;
-
     const { footer, header, button } = await getDictionary(lang);
 
     return (
