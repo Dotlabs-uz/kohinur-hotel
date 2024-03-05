@@ -5,9 +5,11 @@ import useEmblaCarousel, {
     type UseEmblaCarouselType,
 } from "embla-carousel-react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import { FaArrowLeft } from "react-icons/fa6";
 
 import { cn } from "@/lib/utils";
 import { Button } from "./button";
+import Image from "next/image";
 
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
@@ -204,8 +206,9 @@ const CarouselPrevious = React.forwardRef<
     return (
         <Button
             ref={ref}
+            size="icon"
             className={cn(
-                "absolute h-8 w-8 rounded-full hover:bg-transparent",
+                "absolute h-8 w-8 rounded-full hover:bg-transparent bg-[#C0C0C0]",
                 orientation === "horizontal"
                     ? "-left-12 top-1/2 -translate-y-1/2"
                     : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -215,7 +218,7 @@ const CarouselPrevious = React.forwardRef<
             onClick={scrollPrev}
             {...props}
         >
-            <ArrowLeft className="h-4 w-4 lg:h-8 lg:w-8" />
+            <ArrowLeft color="#686868" className="h-4 w-4 lg:h-8 lg:w-8" />
             <span className="sr-only">Previous slide</span>
         </Button>
     );
@@ -231,8 +234,9 @@ const CarouselNext = React.forwardRef<
     return (
         <Button
             ref={ref}
+            size="icon"
             className={cn(
-                "absolute h-8 w-8 rounded-full hover:bg-transparent",
+                "absolute h-8 w-8 rounded-full hover:bg-transparent bg-[#C0C0C0]",
                 orientation === "horizontal"
                     ? "-right-12 top-1/2 -translate-y-1/2"
                     : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -242,7 +246,7 @@ const CarouselNext = React.forwardRef<
             onClick={scrollNext}
             {...props}
         >
-            <ArrowRight className="h-4 w-4 lg:h-8 lg:w-8" />
+            <ArrowRight color="#686868" className="h-4 w-4 lg:h-8 lg:w-8" />
             <span className="sr-only">Next slide</span>
         </Button>
     );

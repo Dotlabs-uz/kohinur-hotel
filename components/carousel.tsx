@@ -45,8 +45,8 @@ const CarauselSection = ({ data }: any) => {
                 ))}
                 <CarouselItem className="basis-0 lg:basis-1/3"></CarouselItem>
             </CarouselContent>
-            <CarouselPrevious className="absolute left-1/2 -translate-x-[100%] max-lg:-translate-x-[125%] translate-y-28 max-md:translate-y-20 max-sm:translate-y-12" />
-            <CarouselNext className=" absolute left-1/2 max-lg:-translate-x-[25%] translate-y-28 max-md:translate-y-20 max-sm:translate-y-12" />
+            <CarouselPrevious className="left-1/2 -translate-x-[120%] max-lg:-translate-x-[125%] translate-y-28 max-md:translate-y-20 max-sm:translate-y-12" />
+            <CarouselNext className="left-1/2 max-lg:-translate-x-[25%] translate-y-28 max-md:translate-y-20 max-sm:translate-y-12" />
         </Carousel>
     );
 };

@@ -34,7 +34,7 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({ data }) => {
             <nav className="mx-6 flex items-center space-x-2">
                 {routes.map((route) => (
                     <Link
-                        href={route.href}
+                        href={`${pathname.slice(0,3)}/${route.href}`}
                         key={route.href}
                         className={
                             "text-sm text-white font-medium group transition-colors p-[10px]"
