@@ -31,7 +31,7 @@ const SectionThree: React.FunctionComponent<SectionThreeProps> = ({
     return (
         <section className="mt-28 max-sm:mt-14">
             <div className="flex flex-col items-center justify-center gap-5 max-sm:gap-3">
-                <span className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base font-extralight text-[#05243F]">
+                <span className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base font-extralight text-[#05243F] text-center">
                     {data.section3.span}
                 </span>
                 <h2 className="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl font-semibold font-cormorant text-[#05243F]">
