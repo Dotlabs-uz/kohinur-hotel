@@ -34,7 +34,6 @@ export default async function RootLayout({
     children: React.ReactNode;
     params: { lang: Locale };
 }>) {
-
     const { footer, header, button } = await getDictionary(lang);
 
     return (
