@@ -42,13 +42,13 @@ const FilterChild: React.FunctionComponent<FilterChildProps> = ({ item ,buttonTe
                     <p className="text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg text-[#2A3D4D] mt-6 max-md:mt-3 font-medium">
                         Price: {item.price}
                     </p>
-                    <div className="flex items-center gap-20 mt-8 max-md:mt-5 max-md:flex-col max-md:gap-5">
-                        <button className="text-xl max-lg:text-lg max-md:text-base text-[#05243F] border border-[#05243F] px-20 py-6 max-sm:py-3 hover:shadow-md max-lg:bg-[#F9A52E] max-lg:border-none max-md:w-full ">
+                    <div className="flex items-center gap-20 mt-8 max-md:mt-5 max-md:flex-col-reverse max-lg:gap-3">
+                        <button className="text-xl max-lg:text-lg max-md:text-base text-[#05243F] border border-[#05243F] px-20 py-6 max-lg:py-3 hover:shadow-md max-lg:bg-[#F9A52E] max-lg:border-none max-lg:w-full ">
                             {buttonText}
                         </button>
                         <button
                             onClick={() => setMoreInfoHandle(!moreInfoHandle)}
-                            className="text-xl max-lg:text-lg max-md:text-base text-[#05243F] hover:text-[#F9A52E] transition duration-150"
+                            className="text-xl max-lg:text-lg max-md:text-base text-[#05243F] transition duration-150 max-lg:border max-lg:border-[#05243F] max-lg:py-3 w-full"
                         >
                             Подробнее
                         </button>
