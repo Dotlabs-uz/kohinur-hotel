@@ -22,7 +22,6 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({
 }) => {
     const [handleMenu, setHandleMenu] = useState(false);
     const pathname = usePathname();
-    console.log(pathname);
 
     const router = useRouter();
 

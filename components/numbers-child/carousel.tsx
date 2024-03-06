@@ -14,7 +14,7 @@ const CaroucelNumberPage: React.FunctionComponent<
     CaroucelNumberPageProps
 > = () => {
     return (
-        <Carousel className="w-full h-full">
+        <Carousel className="w-full h-full overflow-hidden">
             <CarouselContent>
                 {Array.from({ length: 5 }).map((_, index) => (
                     <CarouselItem key={index}>
@@ -30,8 +30,8 @@ const CaroucelNumberPage: React.FunctionComponent<
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious className="ml-8" />
-            <CarouselNext className="mr-8" />
+            <CarouselPrevious className="ml-14 max-sm:ml-12" />
+            <CarouselNext className="mr-14 max-sm:mr-12" />
         </Carousel>
     );
 };
