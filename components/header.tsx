@@ -45,7 +45,7 @@ const Header = ({links, buttonText}:any) => {
                             width={200}
                             height={50}
                             alt=""
-                            className="max-md:w-[125px] max-md:h-[32px]"
+                            className="max-md:w-[160px]"
                         />
                     </Link>
                     <Navbar data={links}/>

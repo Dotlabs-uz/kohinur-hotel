@@ -41,7 +41,7 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({
 
     return (
         <>
-            <div className="flex items-center gap-7 max-lg:gap-5 max-md:gap-1">
+            <div className="flex items-center gap-7 max-lg:gap-5 max-md:gap-3">
                 <Select onValueChange={changeVal}>
                     <SelectTrigger className="text-[#F9A52E] bg-transparent border-none outline-none text-xl max-lg:text-base">
                         <SelectValue placeholder={pathname.slice(1,3).toUpperCase()} />
@@ -58,7 +58,7 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({
                     onClick={openMenu}
                     size={35}
                     color="white"
-                    className="lg:hidden max-md:w-[30px] max-md:h-5 cursor-pointer"
+                    className="lg:hidden max-md:w-[30px] max-md:h-8 cursor-pointer"
                 />
             </div>
 

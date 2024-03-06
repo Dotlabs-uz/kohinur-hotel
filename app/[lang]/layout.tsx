@@ -47,7 +47,6 @@ export default async function RootLayout({
                 )}
             >
                 <Header links={header.links} buttonText={button} />
-
                 {children}
                 <Footer translation={footer} />
             </body>

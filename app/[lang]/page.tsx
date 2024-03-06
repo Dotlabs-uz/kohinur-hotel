@@ -23,7 +23,7 @@ export default async function Home({
 
     return (
         <main>
-            <section className=" relative h-[750px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[250px] flex flex-col gap-0 items-center justify-center text-white">
+            <section className=" relative h-[750px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[350px] flex flex-col gap-0 items-center justify-center text-white">
                 <Image
                     src={"/images/home_page/first_section_image.webp"}
                     width={500}
@@ -42,7 +42,7 @@ export default async function Home({
                 <p
                     data-aos="zoom-in"
                     data-aos-delay="300"
-                    className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-xs font-cormorant"
+                    className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-sm font-cormorant"
                 >
                     {homePage.section1.p}
                 </p>
@@ -59,7 +59,7 @@ export default async function Home({
                     <p
                         data-aos="fade-down"
                         data-aos-delay="100"
-                        className="text-[#05243F] text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-sm"
+                        className="text-[#05243F] text-3xl max-lg:text-2xl max-md:text-xl"
                     >
                         {homePage.section2.span}
                     </p>
@@ -69,7 +69,7 @@ export default async function Home({
                         width={100}
                         height={100}
                         alt=""
-                        className="w-[15px] max-lg:w-[10px] max-md:w-[8px]"
+                        className="w-[15px] max-lg:w-[10px] max-md:w-[8px] mt-2"
                     />
                     <h2
                         data-aos="fade-up"
@@ -98,13 +98,13 @@ export default async function Home({
                                 className="w-[420px] max-md:w-[370px] max-sm:w-[270px] max-[420px]:w-[200px] absolute bottom-0 right-0"
                             />
                         </div>
-                        <div className="text-[#2A3D4D] w-full h-full flex flex-col justify-between max-lg:gap-16 max-md:gap-10 max-sm:gap-6 text-2xl max-lg:text-xl max-md:text-lg max-sm:text-sm">
+                        <div className="text-[#2A3D4D] w-full h-full flex flex-col justify-between max-lg:gap-16 max-md:gap-10 max-sm:gap-6 text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
                             <p className="max-w-[530px] max-sm:max-w-[260px]">
                                 {homePage.section2.p1}
                             </p>
                             <div className="pl-[120px] pb-6">
                                 <p>{homePage.section2.p2}</p>
-                                <button className="text-black hover:bg-[#00000012] border border-black px-20 py-5 max-sm:px-10 max-sm:py-3 text-xl max-sm:text-xs font-normal mt-10 max-sm:mt-5">
+                                <button className="text-black hover:bg-[#00000012] border border-black px-20 py-5 max-sm:px-10 max-sm:py-3 text-xl max-sm:text-base font-normal mt-10 max-sm:mt-5">
                                     {button}
                                 </button>
                             </div>
@@ -116,7 +116,7 @@ export default async function Home({
             <SectionFourth data={homePage?.section4} />
             <section className="mt-28 max-sm:mt-14">
                 <div className="w-full flex flex-col items-center justify-center gap-5 max-sm:gap-2">
-                    <span className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base font-extralight text-[#05243F]">
+                    <span className="text-2xl max-lg:text-xl max-md:text-lg font-extralight text-[#05243F]">
                         {homePage.section5.span}
                     </span>
                     <h2 className="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl max-w-[750px] max-lg:max-w-[500px] max-sm:max-w-[280px] font-semibold font-cormorant text-[#05243F] text-center">
@@ -132,7 +132,7 @@ export default async function Home({
                             >
                                 <div className="flex flex-col items-center justify-center">
                                     <div className="w-20 h-20 max-md:h-14 max-md:w-14 max-sm:h-8 max-sm:w-8 rounded-full bg-[#D9D9D9]"></div>
-                                    <p className="text-[#828282] mt-2 max-md:mt-1 max-sm:mt-[2px] max-md:text-sm max-sm:text-[7px]">
+                                    <p className="text-[#828282] mt-2 max-md:mt-1 max-sm:mt-[2px] max-md:text-sm max-sm:text-xs">
                                         {item.name}
                                     </p>
                                 </div>
@@ -151,7 +151,7 @@ export default async function Home({
                         ))}
                     </div>
                     <div className="flex flex-col items-center justify-center gap-7 max-md:gap-5 max-sm:gap-3 mt-[50px] max-md:mt-[30px] max-sm:mt-[25px]">
-                        <p className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-xs text-[#2A3D4D] max-w-[530px] max-sm:max-w-[340px] text-center">
+                        <p className="text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base text-[#2A3D4D] max-w-[530px] max-sm:max-w-[340px] text-center">
                             {homePage.section5.p}
                         </p>
                         <button className="mt-4 max-sm:mt-2 rounded-none text-white py-4 px-20 max-sm:py-3 max-sm:px-9 bg-[#05243F] text-xl max-sm:text-base font-medium">
@@ -191,11 +191,11 @@ export default async function Home({
                             <h3 className="text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-lg font-bold text-[#F9A52E] font-cormorant">
                                 {homePage.section7.title}
                             </h3>
-                            <p className="mt-5 max-w-[350px] max-sm:text-xs">
+                            <p className="mt-5 max-w-[350px] max-sm:text-base">
                                 {homePage.section7.p}
                             </p>
                         </div>
-                        <div className="flex flex-col gap-5 max-sm:gap-3 max-sm:text-xs">
+                        <div className="flex flex-col gap-5 max-sm:gap-3 max-sm:text-base">
                             <h3 className="font-cormorant text-3xl max-sm:text-lg">
                                 {homePage.section7.title2}
                             </h3>
