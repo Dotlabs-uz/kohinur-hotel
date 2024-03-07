@@ -36,7 +36,7 @@ import NavbarActions from "./navbar-actions";
 const Header = ({links, buttonText}:any) => {    
 
     return (
-        <header className="bg-[#05243F] py-3">
+        <header className="bg-[#05243F] py-3 max-sm:py-2">
             <Container>
                 <div className="flex items-center justify-between">
                     <Link href={"/"}>
