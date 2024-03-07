@@ -46,9 +46,9 @@ export default async function RootLayout({
                     cormorant.variable
                 )}
             >
-                <Header links={header.links} buttonText={button} />
-                {children}
-                <Footer translation={footer} />
+                    <Header links={header.links} buttonText={button} />
+                    {children}
+                    <Footer translation={footer} />
             </body>
         </html>
     );
