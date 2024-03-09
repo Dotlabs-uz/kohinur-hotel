@@ -74,13 +74,18 @@ const config = {
         "close-burger": {
           from: {translate: "0 0"},
           to: {translate: "0 ,-100%"}
+        },
+        "scale-photo": {
+          from: {scale: "0.5"},
+          to: {scale: "1"}
         }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "open-burger": "open-burger 1s ease",
-        "close-burger": "close-burger 1s ease"
+        "close-burger": "close-burger 1s ease",
+        "scale-photo": "scale-photo 4s ease"
       },
       fontFamily: {
         cormorant: ["var(--font-cormorant)"]

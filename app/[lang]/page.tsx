@@ -23,13 +23,20 @@ export default async function Home({
 
     return (
         <main>
-            <section className=" relative h-[750px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[350px] flex flex-col gap-0 items-center justify-center text-white">
+            <section className="scale-photo relative h-[750px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[350px] flex flex-col gap-0 items-center justify-center text-white">
                 <Image
                     src={"/images/home_page/first_section_image.webp"}
                     width={500}
                     height={500}
                     alt=""
-                    className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
+                    className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover opacity-85"
+                />
+                <Image
+                    src={"/images/home_page/first_section_image.webp"}
+                    width={500}
+                    height={500}
+                    alt=""
+                    className="animate-scale-photo absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
                 />
                 <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full -z-10 "></div>
                 <h1
@@ -112,7 +119,7 @@ export default async function Home({
                     </div>
                 </Container>
             </section>
-            <SectionThree data={homePage} buttonText={button}/>
+            <SectionThree data={homePage} buttonText={button} />
             <SectionFourth data={homePage?.section4} />
             <section className="mt-28 max-sm:mt-14">
                 <div className="w-full flex flex-col items-center justify-center gap-5 max-sm:gap-2">
