@@ -76,8 +76,8 @@ const config = {
           to: {translate: "0 ,-100%"}
         },
         "scale-photo": {
-          from: {scale: "0.8"},
-          to: {scale: "1"}
+          from: {opacity: "0"},
+          to: {opacity: "1"}
         }
       },
       animation: {
