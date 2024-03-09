@@ -85,7 +85,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
         "open-burger": "open-burger 1s ease",
         "close-burger": "close-burger 1s ease",
-        "scale-photo": "scale-photo 4s ease"
+        "scale-photo": "scale-photo 3s ease"
       },
       fontFamily: {
         cormorant: ["var(--font-cormorant)"]
