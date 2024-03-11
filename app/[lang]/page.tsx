@@ -41,14 +41,14 @@ export default async function Home({
                 <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full -z-10 "></div>
                 <h1
                     data-aos="zoom-in"
-                    data-aos-delay="500"
+                    data-aos-delay="1000"
                     className="text-9xl max-xl:text-8xl max-lg:text-7xl max-md:text-6xl max-sm:text-4xl font-cormorant text-center"
                 >
                     {homePage.section1.h1}
                 </h1>
                 <p
                     data-aos="zoom-in"
-                    data-aos-delay="1000"
+                    data-aos-delay="1500"
                     className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-sm font-cormorant"
                 >
                     {homePage.section1.p}
