@@ -76,8 +76,8 @@ const config = {
           to: {translate: "0 ,-100%"}
         },
         "scale-photo": {
-          "0%": {scale: "0.7" , translate: "0 0", height: "0px"},
-          "100%": {scale: "1", translate: "0 0", height: "100%"}
+          "0%": {scale: "0.7", height: "0%"},
+          "100%": {scale: "1", height: "100%"}
         }
       },
       animation: {
