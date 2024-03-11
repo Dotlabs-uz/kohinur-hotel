@@ -25,20 +25,24 @@ export default async function Home({
         <main>
             <section className="scale-photo relative h-[750px] max-xl:h-[600px] max-lg:h-[500px] max-md:h-[430px] max-sm:h-[350px] flex flex-col gap-0 items-center justify-center text-white">
                 {/* <Image
-                    src={"/images/home_page/first_section_image.webp"}
+                    src={"/images/home_page/section2_mask_img.webp"}
                     width={500}
                     height={500}
                     alt=""
-                    className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover opacity-85"
+                    className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
                 /> */}
-                <Image
-                    src={"/images/home_page/first_section_image.webp"}
-                    width={500}
-                    height={500}
-                    alt=""
-                    className="animate-scale-photo absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
-                />
-                <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full -z-10 "></div>
+
+                <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full animate-scale-photo">
+                    <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full"></div>
+
+                    <Image
+                        src={"/images/home_page/first_section_image.webp"}
+                        width={500}
+                        height={500}
+                        alt=""
+                        className="w-full h-full bg-contain bg-center -z-10 object-cover"
+                    />
+                </div>
                 <h1
                     data-aos="zoom-in"
                     data-aos-delay="1000"
@@ -54,13 +58,13 @@ export default async function Home({
                     {homePage.section1.p}
                 </p>
             </section>
-            <section className="relative pt-11 max-lg:pt-5 overflow-hidden">
+            <section className="pt-11 max-lg:pt-5 overflow-hidden">
                 <Image
                     src={"/images/home_page/section2_mask_img.webp"}
                     width={400}
                     height={500}
                     alt=""
-                    className="absolute -top-32 left-0 w-full h-full bg-contain object-cover bg-center -z-20"
+                    className="absolute top-16 left-0 w-full h-[250vh] bg-contain object-cover bg-center -z-20"
                 />
                 <div className="m-auto w-fit flex flex-col items-center justify-center">
                     <p

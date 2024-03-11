@@ -1,6 +1,5 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
@@ -32,7 +31,7 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({
     const router = useRouter();
 
     function changeVal(e: any) {
-        router.push(`/${e}/${pathname.slice(3)}`);
+        router.push(`/${e.toLowerCase()}/${pathname.slice(3)}`);
     }
 
     const openMenu = () => {
@@ -56,12 +55,12 @@ const NavbarActions: React.FunctionComponent<NavbarActionsProps> = ({
                 <Select onValueChange={changeVal}>
                     <SelectTrigger className="text-[#F9A52E] bg-transparent border-none outline-none text-xl max-lg:text-base">
                         <SelectValue
-                            placeholder={pathname.slice(1, 3).toUpperCase()}
+                            placeholder={pathname.slice(1,3).toUpperCase()}
                         />
                     </SelectTrigger>
-                    <SelectContent className="">
-                        <SelectItem value="ru">RU</SelectItem>
-                        <SelectItem value="en">EN</SelectItem>
+                    <SelectContent>
+                        <SelectItem value="RU">RU</SelectItem>
+                        <SelectItem value="EN">EN</SelectItem>
                     </SelectContent>
                 </Select>
                 <button className="bg-[#D79F25] text-[#05243F] max-lg:hidden rounded-none hover:bg-[#8c640f] text-xl px-7 py-2">
