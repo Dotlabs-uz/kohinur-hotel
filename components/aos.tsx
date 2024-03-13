@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 export const AOSInit = () => {
   useEffect(() => {
     AOS.init({
+      once: true,
       easing: 'ease-out-quad',
       duration: 1000,
     });

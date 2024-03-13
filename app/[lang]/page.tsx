@@ -32,7 +32,7 @@ export default async function Home({
                     className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
                 /> */}
 
-                <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full animate-scale-photo">
+                <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full">
                     <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full"></div>
 
                     <Image
@@ -45,14 +45,13 @@ export default async function Home({
                 </div>
                 <h1
                     data-aos="zoom-in"
-                    data-aos-delay="1000"
                     className="text-9xl max-xl:text-8xl max-lg:text-7xl max-md:text-6xl max-sm:text-4xl font-cormorant text-center"
                 >
                     {homePage.section1.h1}
                 </h1>
                 <p
                     data-aos="zoom-in"
-                    data-aos-delay="1500"
+                    data-aos-delay="500"
                     className="text-4xl max-xl:text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-sm font-cormorant"
                 >
                     {homePage.section1.p}
@@ -95,6 +94,8 @@ export default async function Home({
                     <div className="w-full flex max-lg:flex-col gap-3 max-lg:gap-20 max-sm:gap-12 mt-20 max-md:mt-10 max-sm:mt-5 h-[600px] max-lg:h-auto">
                         <div className="relative w-full max-lg:h-[550px] max-sm:h-[380px]  max-[420px]:h-[300px]">
                             <Image
+                                data-aos="fade-right"
+                                data-aos-delay="500"
                                 src={"/images/home_page/section2_img1.webp"}
                                 width={500}
                                 height={390}
@@ -102,6 +103,8 @@ export default async function Home({
                                 className="w-[530px] max-md:w-[450px] max-sm:w-[350px]  max-[420px]:w-[270px]"
                             />
                             <Image
+                                data-aos="zoom-in"
+                                data-aos-delay="500"
                                 src={"/images/home_page/section2_img2.webp"}
                                 width={500}
                                 height={390}
@@ -110,11 +113,17 @@ export default async function Home({
                             />
                         </div>
                         <div className="text-[#2A3D4D] w-full h-full flex flex-col justify-between max-lg:gap-16 max-md:gap-10 max-sm:gap-6 text-2xl max-lg:text-xl max-md:text-lg max-sm:text-base">
-                            <p className="max-w-[530px] max-sm:max-w-[260px]">
+                            <p
+                                data-aos="fade-left"
+                                data-aos-delay="500"
+                                className="max-w-[530px] max-sm:max-w-[260px]"
+                            >
                                 {homePage.section2.p1}
                             </p>
                             <div className="pl-[120px] pb-6">
-                                <p>{homePage.section2.p2}</p>
+                                <p data-aos="fade-left" data-aos-delay="500">
+                                    {homePage.section2.p2}
+                                </p>
                                 <button className="text-black hover:bg-[#00000012] border border-black px-20 py-5 max-sm:px-10 max-sm:py-3 text-xl max-sm:text-base font-normal mt-10 max-sm:mt-5">
                                     {button}
                                 </button>
@@ -135,7 +144,7 @@ export default async function Home({
                     </h2>
                 </div>
                 <Container>
-                    <div className="grid grid-cols-3 max-lg:grid-cols-2 gap-5 max-sm:gap-3 mt-12 max-md:mt-8 max-sm:mt-6">
+                    <div data-aos="fade-up" className="grid grid-cols-3 max-lg:grid-cols-2 gap-5 max-sm:gap-3 mt-12 max-md:mt-8 max-sm:mt-6">
                         {homePage.section5.data.map((item) => (
                             <div
                                 key={item.id}

@@ -25,11 +25,18 @@ const ServicesPage = async ({
                     alt=""
                     className="absolute top-0 left-0 w-full h-full bg-contain bg-center -z-20 object-cover"
                 />
-                <div className="bg-[#05243F4D] absolute top-0 left-0 w-full h-full -z-10"></div>
-                <h1 className="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl font-cormorant text-center">
+                <div className="bg-[#05243f7a] absolute top-0 left-0 w-full h-full -z-10"></div>
+                <h1
+                    data-aos="zoom-in"
+                    className="text-7xl max-lg:text-6xl max-md:text-5xl max-sm:text-4xl font-cormorant text-center"
+                >
                     {servicesPage.section1.h1}
                 </h1>
-                <p className="mt-3 max-w-xl text-center text-2xl max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-xs font-cormorant">
+                <p
+                    data-aos="zoom-in"
+                    data-aos-delay="500"
+                    className="mt-3 max-w-xl text-center text-2xl max-xl:text-xl max-lg:text-lg max-md:text-base max-sm:text-xs font-cormorant"
+                >
                     {servicesPage.section1.p}
                 </p>
             </section>
@@ -48,31 +55,59 @@ const ServicesPage = async ({
                 <section className="mt-20 max-lg:mt-16 max-sm:mt-7">
                     <div className="flex max-lg:flex-col-reverse gap-14 max-lg:gap-8 max-sm:gap-5">
                         <div className="w-full">
-                            <span className="text-3xl max-lg:text-2xl max-md:text-xl font-light">
+                            <span
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                                className="text-3xl max-lg:text-2xl max-md:text-xl font-light"
+                            >
                                 {servicesPage.section2.block.span}
                             </span>
-                            <h3 className="mt-6 max-md:mt-3 text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-cormorant font-bold text-[#05243f]">
+                            <h3
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                                className="mt-6 max-md:mt-3 text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-cormorant font-bold text-[#05243f]"
+                            >
                                 {servicesPage.section2.block.titel}
                             </h3>
-                            <p className="text-2xl max-lg:text-lg max-md:text-base max-sm:text-sm text-[#2A3D4D] mt-5 max-md:mt-3 max-sm:mt-2">
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                                className="text-2xl max-lg:text-lg max-md:text-base max-sm:text-sm text-[#2A3D4D] mt-5 max-md:mt-3 max-sm:mt-2"
+                            >
                                 {servicesPage.section2.block.info}
                             </p>
-                            <p className="mt-20 max-md:mt-14 max-sm:mt-10 text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg text-[#2A3D4D] font-light">
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                                className="mt-20 max-md:mt-14 max-sm:mt-10 text-3xl max-lg:text-2xl max-md:text-xl max-sm:text-lg text-[#2A3D4D] font-light"
+                            >
                                 {servicesPage.section2.block.workTime}
                             </p>
-                            <p className="mt-6 max-md:mt-3">
+                            <p
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                                className="mt-6 max-md:mt-3"
+                            >
                                 {servicesPage.section2.block.first} | 10:00am –
                                 5:00pm
                             </p>
-                            <p>
+                            <p data-aos="fade-right" data-aos-delay="500">
                                 {servicesPage.section2.block.first}| 9:00am –
                                 6:00pm
                             </p>
-                            <button className="text-xl max-lg:text-lg max-md:text-base mt-8 max-md:mt-6 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-7 hover:bg-transparent hover:shadow-md">
+                            <button
+                                data-aos="fade-right"
+                                data-aos-delay="500"
+                                className="text-xl max-lg:text-lg max-md:text-base mt-8 max-md:mt-6 text-[#05243F] rounded-none bg-transparent border border-[#05243F] px-20 py-7 hover:bg-transparent hover:shadow-md"
+                            >
                                 {button}
                             </button>
                         </div>
-                        <div className="w-full">
+                        <div
+                            data-aos="fade-left"
+                            data-aos-delay="500"
+                            className="w-full"
+                        >
                             <Image
                                 src={"/images/services_page_img.png"}
                                 width={300}

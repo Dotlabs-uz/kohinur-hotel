@@ -360,19 +360,19 @@
                 {
                     "id": 1,
                     "image": "/images/restaround_image.png",
-                    "name": "Uzbek national food",
+                    "title": "Uzbek national food",
                     "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым."
                 },
                 {
                     "id": 2,
                     "image": "/images/restaround_image.png",
-                    "name": "Uzbek national food",
+                    "title": "Uzbek national food",
                     "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым."
                 },
                 {
                     "id": 3,
                     "image": "/images/restaround_image.png",
-                    "name": "Uzbek national food",
+                    "title": "Uzbek national food",
                     "info": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым."
                 }
             ],

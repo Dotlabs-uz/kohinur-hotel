@@ -20,7 +20,7 @@ const NumberFilterComp = ({ data, buttonText }: any) => {
         });
 
         setFilteredArr(arr);
-    }, [categoryTitle]);
+    }, [categoryTitle,  data.section2_filter]);
 
     return (
         <section className="my-14 max-lg:my-10 max-sm:my-8 overflow-hidden">
