@@ -5,7 +5,7 @@ import NumberFilterComp from "@/components/numbers-child/numberFilterComp";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Numbers",
+    title: "Rooms",
     description: "Four star hotel in Samarkand",
     keywords:"Kohinur, отель, четыре звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
     viewport: "width=device-width, initial-scale=1.0",

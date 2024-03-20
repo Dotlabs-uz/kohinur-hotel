@@ -52,8 +52,8 @@
     },
     "homePage": {
         "section1": {
-            "h1": "ПУТЕШЕСТВИЕ С",
-            "p": "КОМФОРТОМ - КУЛЬТУРОЙ - ВПЕЧАТЛЕНИЯМИ"
+            "h1": "ПУТЕШЕСТВИЕ",
+            "p": "С КОМФОРТОМ - КУЛЬТУРОЙ - ВПЕЧАТЛЕНИЯМИ"
         },
         "section2": {
             "span": "О нас",
@@ -208,17 +208,17 @@
                 {
                     "id": 1,
                     "question": "Как забронировать номер?",
-                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
                 },
                 {
                     "id": 2,
                     "question": "Как забронировать номер?",
-                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
                 },
                 {
                     "id": 3,
                     "question": "Как забронировать номер?",
-                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
                 },
                 {
                     "id": 4,
@@ -308,32 +308,32 @@
         "section2": {
             "span": "Отдых",
             "h1": "Массаж и СПА",
-            "p": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners",
+            "p": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира",
             "block": {
                 "span": "Services",
                 "titel": "Spa & Wellness",
-                "info": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners of the globe to experience the magic of Uzbekistan in unparalleled comfort and style.",
+                "info": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира со всего земного шара, чтобы ощутить волшебство Узбекистана с непревзойденным комфортом и стилем.",
                 "workTime": "Hours of operation",
                 "first": "Monday – Thursday | 10:00am – 5:00pm",
                 "second": "Friday – Sunday | 9:00am – 6:00pm"
             }
         },
-        "p": "“The relaxed and sophisticated ambiance allowed me to melt into this treatment of royalty.”",
+        "p": "“Непринужденная и утонченная атмосфера позволила мне раствориться в этом королевском обращении.”",
         "section3": [
             {
                 "id": 1,
                 "question": "Закрытый бассейн",
-                "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
             },
             {
                 "id": 2,
                 "question": "Финская сауна",
-                "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
             },
             {
                 "id": 3,
                 "question": "Турецкий хаммам",
-                "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
             },
             {
                 "id": 4,
@@ -384,22 +384,22 @@
         },
         "section4": {
             "title": "Специальные предложения",
-            "p": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners",
+            "p": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира",
             "data": [
                 {
                     "id": 1,
                     "question": "Закрытый бассейн",
-                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
                 },
                 {
                     "id": 2,
                     "question": "Финская сауна",
-                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
                 },
                 {
                     "id": 3,
                     "question": "Турецкий хаммам",
-                    "answer": "Yes. It adheres to the WAI-ARIA design pattern."
+                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
                 },
                 {
                     "id": 4,
@@ -416,25 +416,25 @@
         "section5": {
             "span": "Активности",
             "title": "Мероприятия и активности",
-            "p":"With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners",
+            "p":"С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира",
             "data": [
                 {
                     "id": 1,
                     "image": "/images/home_page/section4_img1.webp",
                     "title": "Master Class",
-                    "info": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners"
+                    "info": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира"
                 },
                 {
                     "id": 2,
                     "image": "/images/home_page/section4_img2.webp",
                     "title": "Master Class",
-                    "info": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners"
+                    "info": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира"
                 },
                 {
                     "id": 3,
                     "image": "/images/home_page/section4_img3.webp",
                     "title": "Master Class",
-                    "info": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners"
+                    "info": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира"
                 }
             ]
         }
