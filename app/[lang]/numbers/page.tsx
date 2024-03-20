@@ -2,6 +2,14 @@ import Image from "next/image";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import NumberFilterComp from "@/components/numbers-child/numberFilterComp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Numbers",
+    description: "Four star hotel in Samarkand",
+    keywords:"Kohinur, отель, четыре звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
+    viewport: "width=device-width, initial-scale=1.0",
+};
 
 const NumbersPage = async ({
     params: { lang },

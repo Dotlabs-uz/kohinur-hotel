@@ -24,7 +24,9 @@ const defaultFont = localFont({
 
 export const metadata: Metadata = {
     title: "Kohinur Plaza",
-    description: "Number one hotel in Samarkand",
+    description: "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
+    keywords:"Kohinur, hotel, four stars, Samarkand, Uzbekistan, luxury, restaurant, spa, pool, rooms",
+    viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default async function RootLayout({
@@ -37,7 +39,7 @@ export default async function RootLayout({
     const { footer, header, button } = await getDictionary(lang);
 
     return (
-        <html lang="en">
+        <html lang={lang}>
             <AOSInit />
             <body
                 className={cn(

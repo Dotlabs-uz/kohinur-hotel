@@ -8,7 +8,15 @@ import {
 import Container from "@/components/ui/container";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Nutrition",
+    description: "Four star hotel in Samarkand",
+    keywords:"Kohinur, отель, четыре звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
+    viewport: "width=device-width, initial-scale=1.0",
+};
 
 const RestaurantPage = async ({
     params: { lang },

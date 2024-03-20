@@ -420,19 +420,19 @@
             "data": [
                 {
                     "id": 1,
-                    "image": "/images/home_page/section4_img.webp",
+                    "image": "/images/home_page/section4_img1.webp",
                     "title": "Master Class",
                     "info": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners"
                 },
                 {
                     "id": 2,
-                    "image": "/images/home_page/section4_img.webp",
+                    "image": "/images/home_page/section4_img2.webp",
                     "title": "Master Class",
                     "info": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners"
                 },
                 {
                     "id": 3,
-                    "image": "/images/home_page/section4_img.webp",
+                    "image": "/images/home_page/section4_img3.webp",
                     "title": "Master Class",
                     "info": "With the opening of its doors, the Kohinur Plaza welcomes discerning travelers from all corners"
                 }
