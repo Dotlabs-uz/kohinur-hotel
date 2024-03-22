@@ -2,25 +2,14 @@ import Image from "next/image";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import NumberFilterComp from "@/components/numbers-child/numberFilterComp";
-// import { Metadata } from "next";
-import { generateMetadata } from "../layout";
+import { Metadata } from "next";
 
-// export const metadata: Metadata = {
-//     title: "Rooms",
-//     description: "Four star hotel in Samarkand",
-//     keywords:"Kohinur, отель, четыре звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
-//     viewport: "width=device-width, initial-scale=1.0",
-// };
-
-const metadata = generateMetadata(
-    "Rooms",
-    "Four star hotel in Samarkand",
-    "Rooms",
-    "https://www.kohinur-plaza.com/images/logo-main.svg",
-    "Kohinur, hotel, four stars, Samarkand, Uzbekistan, luxury, restaurant, spa, pool, rooms",
-    "width=device-width, initial-scale=1.0",
-    "https://www.kohinur-plaza.com/images/logo-main.svg"
-)
+export const metadata: Metadata = {
+    title: "Rooms",
+    description: "Four star hotel in Samarkand",
+    keywords:"Kohinur, отель, четыре звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
+    viewport: "width=device-width, initial-scale=1.0",
+};
 
 const NumbersPage = async ({
     params: { lang },
