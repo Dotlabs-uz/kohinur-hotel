@@ -26,6 +26,7 @@ const HeadMeta: React.FunctionComponent<HeadMetaProps> = ({metadata}) => {
             {/* Дополнительные метаданные */}
             <meta name="keywords" content={metadata.keywords} />
             <meta name="viewport" content={metadata.viewport} />
+            <meta property="og:image" content={metadata.icons}/>
             <link rel="icon" href={metadata.icons} />
         </Head>
     );
