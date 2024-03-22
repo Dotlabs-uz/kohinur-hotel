@@ -3,7 +3,6 @@ import Header from "@/components/header";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import { cn } from "@/lib/utils";
-import type { Metadata } from "next";
 import { Cormorant_SC } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -22,23 +21,63 @@ const defaultFont = localFont({
     variable: "--font-suisseintl",
 });
 
-export const metadata: Metadata = {
-    title: "Kohinur Plaza",
-    description:
-        "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
+// export const metadata: Metadata = {
+//     title: "Kohinur Plaza",
+//     description:
+//         "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
+//     openGraph: {
+//         title: "Kohinur Plaza",
+//         images: ["https://www.kohinur-plaza.com/images/logo-main.svg"],
+//     },
+//     keywords:
+//         "Kohinur, hotel, four stars, Samarkand, Uzbekistan, luxury, restaurant, spa, pool, rooms",
+//     viewport: "width=device-width, initial-scale=1.0",
+//     icons: "https://www.kohinur-plaza.com/images/logo-main.svg",
+// };
+
+interface Metadata {
+    title: string;
+    description: string;
     openGraph: {
-        title: "Kohinur Plaza",
-        type: "website",
-        images: ["https://www.kohinur-plaza.com/images/logo-main.svg"],
-        url: "https://www.kohinur-plaza.com",
-        description:
-            "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
-    },
-    keywords:
-        "Kohinur, hotel, four stars, Samarkand, Uzbekistan, luxury, restaurant, spa, pool, rooms",
-    viewport: "width=device-width, initial-scale=1.0",
-    icons: "https://www.kohinur-plaza.com/images/logo-main.svg",
-};
+        title: string;
+        images: string[];
+    };
+    keywords: string;
+    viewport: string;
+    icons: string;
+}
+
+export function generateMetadata(
+    title: string,
+    description: string,
+    ogTitle: string,
+    ogImage: string,
+    keywords: string,
+    viewport: string,
+    icon: string
+): Metadata {
+    return {
+        title: title,
+        description: description,
+        openGraph: {
+            title: ogTitle,
+            images: [ogImage],
+        },
+        keywords: keywords,
+        viewport: viewport,
+        icons: icon,
+    };
+}
+
+const metadata = generateMetadata(
+    "Kohinur Plaza",
+    "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
+    "Kohinur Plaza",
+    "https://www.kohinur-plaza.com/images/logo-main.svg",
+    "Kohinur, hotel, four stars, Samarkand, Uzbekistan, luxury, restaurant, spa, pool, rooms",
+    "width=device-width, initial-scale=1.0",
+    "https://www.kohinur-plaza.com/images/favicon.ico"
+);
 
 export default async function RootLayout({
     children,
