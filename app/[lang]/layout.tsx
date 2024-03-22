@@ -24,14 +24,20 @@ const defaultFont = localFont({
 
 export const metadata: Metadata = {
     title: "Kohinur Plaza",
-    openGraph:{
+    description:
+        "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
+    openGraph: {
         title: "Kohinur Plaza",
-        description: "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
-        images: ["https://www.kohinur-plaza.com/images/logo-main.svg"]
+        type: "website",
+        images: ["https://www.kohinur-plaza.com/images/logo-main.svg"],
+        url: "https://www.kohinur-plaza.com",
+        description:
+            "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
     },
-    keywords:"Kohinur, hotel, four stars, Samarkand, Uzbekistan, luxury, restaurant, spa, pool, rooms",
+    keywords:
+        "Kohinur, hotel, four stars, Samarkand, Uzbekistan, luxury, restaurant, spa, pool, rooms",
     viewport: "width=device-width, initial-scale=1.0",
-    icons:"https://www.kohinur-plaza.com/images/logo-main.svg"
+    icons: "https://www.kohinur-plaza.com/images/logo-main.svg",
 };
 
 export default async function RootLayout({
@@ -53,9 +59,9 @@ export default async function RootLayout({
                     cormorant.variable
                 )}
             >
-                    <Header links={header.links} buttonText={button} />
-                    {children}
-                    <Footer translation={footer} />
+                <Header links={header.links} buttonText={button} />
+                {children}
+                <Footer translation={footer} />
             </body>
         </html>
     );
