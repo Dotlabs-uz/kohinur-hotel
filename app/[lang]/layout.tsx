@@ -27,6 +27,7 @@ export const metadata: Metadata = {
     description: "Kohinur Hotel is a luxurious four-star hotel in Samarkand, offering comfortable rooms, a restaurant, a spa center and other amenities. Book a room right now!",
     keywords:"Kohinur, hotel, four stars, Samarkand, Uzbekistan, luxury, restaurant, spa, pool, rooms",
     viewport: "width=device-width, initial-scale=1.0",
+    icons:"/images/logo-main.svg"
 };
 
 export default async function RootLayout({
