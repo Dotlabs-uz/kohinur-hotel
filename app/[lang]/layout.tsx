@@ -68,12 +68,9 @@ export default async function RootLayout({
 }>) {
     const { footer, header, button } = await getDictionary(lang);
 
-    const metadata = lang === "en" ? generateMetadataEn() : generateMetadataRu();
-
     return (
         <html lang={lang}>
             <AOSInit />
-            <HeadMeta metadata={metadata}/>
             <body
                 className={cn(
                     "bg-[#E7E7E7] text-[#05243F]",
