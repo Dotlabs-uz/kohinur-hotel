@@ -6,7 +6,6 @@ interface ReviewsPageProps {}
 export const metadata: Metadata = {
     title: "Reviews",
     description: "Four star hotel in Samarkand",
-    keywords:"Kohinur, отель, четыре звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
     viewport: "width=device-width, initial-scale=1.0",
 };
 

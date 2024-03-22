@@ -13,9 +13,9 @@ import Container from "@/components/ui/container";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
 import SectionFourth from "@/components/sectionFourth";
-// import HeadMeta from "@/components/headMeta";
-// import { generateMetadataEn } from "@/locales/metadata_en";
-// import { generateMetadataRu } from "@/locales/metadata_ru";
+import HeadMeta from "@/components/headMeta";
+import { generateMetadataEn } from "@/locales/metadata_en";
+import { generateMetadataRu } from "@/locales/metadata_ru";
 
 export default async function Home({
     params: { lang },
@@ -26,6 +26,8 @@ export default async function Home({
 
     // const metadata = lang === "en" ? generateMetadataEn() : generateMetadataRu();
 
+    // console.log(metadata);
+    
     return (
         <>
             {/* <HeadMeta metadata={metadata}/> */}

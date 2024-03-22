@@ -14,7 +14,6 @@ import Image from "next/image";
 export const metadata: Metadata = {
     title: "Nutrition",
     description: "Four star hotel in Samarkand",
-    keywords:"Kohinur, отель, четыре звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
     viewport: "width=device-width, initial-scale=1.0",
 };
 
