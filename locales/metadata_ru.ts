@@ -32,7 +32,7 @@ export function generateMetadataRu(): Metadata {
                 }
             ]
         },
-        keywords: "Kohinur, отель, четыре звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
+        keywords: "Kohinur, отель, четыре, звезды, Самарканд, Узбекистан, роскошь, ресторан, спа, бассейн, номера",
         viewport: "width=device-width, initial-scale=1.0",
         icons: "https://www.kohinur-plaza.com/images/logo-main.svg"
     };
