@@ -76,8 +76,18 @@ export default async function RootLayout({
         <html lang={lang}>
             <AOSInit />
             <Head>
+                <meta property="og:title" content="Kohinur Plaza" />
+                <meta property="og:type" content="website" />
                 <meta
-                    property="og:image:secure_url"
+                    property="og:description"
+                    content="Гостиница Кохинур – это роскошный четырехзвездочный отель в Самарканде, предлагающий комфортабельные номера, ресторан, спа-центр и другие удобства. Забронируйте номер прямо сейчас!"
+                />
+                <meta
+                    property="og:url"
+                    content="https://www.kohinur-plaza.com/"
+                />
+                <meta
+                    property="og:image"
                     content="https://www.kohinur-plaza.com/images/logo-main.svg"
                 />
             </Head>
