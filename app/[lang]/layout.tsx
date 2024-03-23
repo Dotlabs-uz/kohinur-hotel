@@ -9,6 +9,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import "aos/dist/aos.css";
 import { AOSInit } from "@/components/aos";
+import Head from "next/head";
 
 const cormorant = Cormorant_SC({
     weight: ["300", "400", "500", "600", "700"],
@@ -74,6 +75,12 @@ export default async function RootLayout({
     return (
         <html lang={lang}>
             <AOSInit />
+            <Head>
+                <meta
+                    property="og:image:secure_url"
+                    content="https://www.kohinur-plaza.com/images/logo-main.svg"
+                />
+            </Head>
             <body
                 className={cn(
                     "bg-[#E7E7E7] text-[#05243F]",
