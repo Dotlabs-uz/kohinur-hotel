@@ -88,7 +88,7 @@ export default async function RootLayout({
                 />
                 <meta
                     property="og:image"
-                    content="https://www.kohinur-plaza.com/images/logo-main.svg"
+                    content="https://www.kohinur-plaza.com/images/icon.svg"
                 />
             </Head>
             <body
