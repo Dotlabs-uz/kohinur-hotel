@@ -1,3 +1,5 @@
 User-agent: *
 Disallow: /admin
 Disallow: /private
+
+Sitemap: https://www.kohinur-plaza.com/ru/sitemap.xml
