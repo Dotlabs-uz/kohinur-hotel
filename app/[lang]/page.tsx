@@ -263,11 +263,11 @@ export default async function Home({
                                         <div className="flex flex-col gap-1">
                                             <span>
                                                 {" "}
-                                                {homePage.section7.adress1}
+                                                {homePage.section7.address1}
                                             </span>
                                             <span>
                                                 {" "}
-                                                {homePage.section7.adress2}
+                                                {homePage.section7.address2}
                                             </span>
                                         </div>
                                     </div>

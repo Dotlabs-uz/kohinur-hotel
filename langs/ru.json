@@ -232,8 +232,8 @@
             "span": "Отзывы",
             "p": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самаркан в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым.",
             "title2": "Сontact us",
-            "adress1": "Samarkand",
-            "adress2": "st. Mirzo-Ulugbek 52",
+            "address1": "Samarkand",
+            "address2": "st. Mirzo-Ulugbek 52",
             "day": "Понедельник-Воскресенье "
         }
     },
@@ -311,7 +311,7 @@
             "p": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира",
             "block": {
                 "span": "Services",
-                "titel": "Spa & Wellness",
+                "title": "Spa & Wellness",
                 "info": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира со всего земного шара, чтобы ощутить волшебство Узбекистана с непревзойденным комфортом и стилем.",
                 "workTime": "Hours of operation",
                 "first": "Monday – Thursday | 10:00am – 5:00pm",

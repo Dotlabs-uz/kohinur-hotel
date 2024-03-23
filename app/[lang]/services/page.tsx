@@ -74,7 +74,7 @@ const ServicesPage = async ({
                                 data-aos-delay="500"
                                 className="mt-6 max-md:mt-3 text-6xl max-lg:text-5xl max-md:text-4xl max-sm:text-3xl font-cormorant font-bold text-[#05243f]"
                             >
-                                {servicesPage.section2.block.titel}
+                                {servicesPage.section2.block.title}
                             </h3>
                             <p
                                 data-aos="fade-right"
