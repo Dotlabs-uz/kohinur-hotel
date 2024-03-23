@@ -203,27 +203,27 @@
             ]
         },
         "section6": {
-            "title": "Остались ещё вопросы?",
+            "title": "Still Have Questions?",
             "data": [
                 {
                     "id": 1,
-                    "question": "Как забронировать номер?",
-                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
+                    "question": "How to book a room?",
+                    "answer": "Yes. It adheres to the WAI-ARIA design template."
                 },
                 {
                     "id": 2,
-                    "question": "Как забронировать номер?",
-                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
+                    "question": "How to book a room?",
+                    "answer": "Yes. It adheres to the WAI-ARIA design template."
                 },
                 {
                     "id": 3,
-                    "question": "Как забронировать номер?",
-                    "answer": "Да. Он соответствует шаблону дизайна WAI-ARIA."
+                    "question": "How to book a room?",
+                    "answer": "Yes. It adheres to the WAI-ARIA design template."
                 },
                 {
                     "id": 4,
-                    "question": "Что находится рядом с отелем?",
-                    "answer": "“Kohinur Plaza” Hotel & Spa расположен в старой части древнего города Самарканд в шаговой доступности от Сиабского базара и Соборной мечети Биби-Ханым."
+                    "question": "What is near the hotel?",
+                    "answer": "The 'Kohinur Plaza' Hotel & Spa is located in the old part of the ancient city of Samarkand within walking distance of the Siab Bazaar and the Bibi-Khanym Cathedral Mosque."
                 }
             ]
         },
@@ -416,7 +416,7 @@
         "section5": {
             "span": "Активности",
             "title": "Мероприятия и активности",
-            "p":"С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира",
+            "p": "С открытием своих дверей отель Kohinoor Plaza приветствует взыскательных путешественников со всех уголков мира",
             "data": [
                 {
                     "id": 1,

@@ -1,6 +1,5 @@
 {
     "button": "To book",
-
     "header": {
         "links": [
             {
@@ -200,6 +199,31 @@
                     "name": "Donquixote Doflamingo",
                     "userPhoto": "/",
                     "p": "As Kohinur Plaza opens its doors, it welcomes discerning travelers from all corners."
+                }
+            ]
+        },
+        "section6": {
+            "title": "Still Have Questions?",
+            "data": [
+                {
+                    "id": 1,
+                    "question": "How to book a room?",
+                    "answer": "Yes. It adheres to the WAI-ARIA design template."
+                },
+                {
+                    "id": 2,
+                    "question": "How to book a room?",
+                    "answer": "Yes. It adheres to the WAI-ARIA design template."
+                },
+                {
+                    "id": 3,
+                    "question": "How to book a room?",
+                    "answer": "Yes. It adheres to the WAI-ARIA design template."
+                },
+                {
+                    "id": 4,
+                    "question": "What is near the hotel?",
+                    "answer": "The 'Kohinur Plaza' Hotel & Spa is located in the old part of the ancient city of Samarkand within walking distance of the Siab Bazaar and the Bibi-Khanym Cathedral Mosque."
                 }
             ]
         },
